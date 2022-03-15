@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid Test</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+
+    <h2>Here is one mermaid diagram:</h2>
+    <div class="mermaid">
+        graph TD
+        A[Client] --> B[Load Balancer]
+        B --> C[Server1]
+        B --> D[Server2]
+    </div>
+
+    <h2>Flowchart</h2>
+    <div class="mermaid">
+        graph TD;
+        A-->B;
+        A-->C;
+        B-->D;
+        C-->D;
+    </div>
+
+    <h2>Sequence diagram</h2>
+    <div class="mermaid">
+        sequenceDiagram
+        participant Alice
+        participant Bob
+        Alice->>John: Hello John, how are you?
+        loop Healthcheck
+        John->>John: Fight against hypochondria
+        end
+        Note right of John: Rational thoughts <br />prevail!
+        John-->>Alice: Great!
+        John->>Bob: How about you?
+        Bob-->>John: Jolly good!
+    </div>
+</body>
+
+</html>
