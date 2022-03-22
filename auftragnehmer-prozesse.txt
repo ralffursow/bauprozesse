@@ -1,0 +1,464 @@
+Id;Phase;Prozessname;Inhaltsbereich;Prozessbeteiligte;Ebene;Vorgaenger;Nachfolger
+185;Projektvorbereitung;Vertragsinitiierung;Vertrag;;2;25;1
+186;Projektvorbereitung;Vertragsanbahnung;Vertrag;;3;29;2
+187;Projektvorbereitung;Informationen gewinnen;Vertrag;AG, AIF;4;30;188,189,190
+188;Projektvorbereitung;Vertragsziele grob definieren;Vertrag;AG, RA;4;187;3
+189;Projektvorbereitung;Vertragszweck beschreiben;Vertrag;AG, AIF, RA;4;187;3
+190;Projektvorbereitung;Mögliche Vertragspartner grob auswaehlen;Vertrag;AG, AIF, PL, BER;4;187;3
+1;Planung;Vertragsiniitierung;Vertrag;;2;185;6
+2;Planung;Vertragsanbahnung;Vertrag;;3;186;7
+204;Planung;Vergabevoraussetzungen analysieren;Vertrag;PM, PS, B, RA;4;188,189,190,198;3
+3;Planung;Vergabeart wählen;Vertrag;AG, PM, PS, RA;4;204;4,5
+4;Planung;Vertragszweck/ -ziel formulieren;Vertrag;PL, PM, PS, RA;4;3;
+5;Planung;Leistungselemente spezifizieren;Vertrag;PM, AIF;4;3;
+;Planung;Vertragskonzeption;Vertrag;;3;;
+205;Planung;Ausschreibung erstellen;Vertrag;PM, AIF, RA;4;5;206
+206;Planung;Potentielle Auftragnehmer auswählen;Vertrag;PL, RA, AIF, PS, AG;4;205,207;8
+207;Planung;Vertragsbeziehungen gestalten;Vertrag;PL, RA;4;4;206
+6;Ausführungsvorbereitung;Vertragsinitiierung;Vertrag;;2;1;11
+7;Ausführungsvorbereitung;Vertragskonzeption;Vertrag;;3;2;12
+8;Ausführungsvorbereitung;Leistungsbeschreibung einarbeiten;Vertrag;AIF, RA;4;206;10
+11;Ausführungsvorbereitung;Zeichnungen zusammenstellen;Vertrag;AIF, RA, PL;4;;10,79
+79;Ausführungsvorbereitung;Gutachten / Nachweise zusammenstellen;Vertrag;AIF, SV, BER, V;4;11;10
+10;Ausführungsvorbereitung;Vertragsunterlagen zusammenstellen;Vertrag;RA, PL;4;8,11,79;9
+9;Ausführungsvorbereitung;Vertragsentwurf erstellen;Vertrag;RA;4;10;13
+12;Ausführungsvorbereitung;Vertragsverhandlung;Vertrag;;3;;
+13;Ausführungsvorbereitung;Leistungen ausschreiben;Vertrag;AG, PL, B;4;9;119
+119;Ausführungsvorbereitung;Zugang der Angebote erwarten;Vertrag;AG, PL, B;4;13;14
+14;Ausführungsvorbereitung;Angebote und Verträge prüfen;Vertrag;PM, RA, PS;4;119;237
+237;Ausführungsvorbereitung;Verhandlungsgespräche führen;Vertrag;PL, PM, AG, RA, aF;4;14;15
+15;Ausführungsvorbereitung;Angebot(e) annehmen;Vertrag;AG, PL, aF;4;237;162
+162;Ausführungsvorbereitung;Vertrag unterzeichnen;Vertrag;AG, aF, RA;4;15;
+16;Ausführung;Vertragsabwicklung;Vertrag;;2;11;21
+17;Ausführung;Vertragsdurchführung;Vertrag;;3;12;22
+18;Ausführung;Vertragspflichten durchsetzen;Vertrag;PL, PM, RA, B;4;14;19
+19;Ausführung;Änderungsvereinbarungen prüfen;Vertrag;PM, PS, AIF;4;18;20
+289;Ausführung;Nachforderungen AN prüfen;Vertrag;PS, PM, RA, V, BER;4;;
+290;Ausführung;Nachforderungen AN verhandeln;Vertrag;PM, AIF, aF;4;;
+291;Ausführung;Nachforderungen AN freigeben/abwehren;Vertrag;PL, AG, RA;4;;
+20;Ausführung;Abnahmen vorbereiten;Vertrag;PM, B;4;19;23
+21;Projektabschluss;Vertragsabwicklung;Vertrag;;2;16;
+22;Projektabschluss;Vertragsdurchführung;Vertrag;;3;17;
+341;Projektabschluss;Nachforderungen AN prüfen;Vertrag;PS, PM, RA, V, BER;4;20;24
+342;Projektabschluss;Nachforderungen AN verhandeln;Vertrag;PM, AIF, aF;4;;
+343;Projektabschluss;Nachforderungen AN freigeben/abwehren;Vertrag;PL, AG, RA;4;;
+344;Projektabschluss;Abnahmen vorbereiten;Vertrag;PM, B;4;;
+345;Projektabschluss;Vertragsende;Vertrag;;3;;
+346;Projektabschluss;Abnahmen durchführen;Vertrag;PL, AIF, SV, aF, AG, RA;4;;
+23;Projektabschluss;Vertragspflichten auf Erfüllung prüfen;Vertrag;PL, AIF, SV, aF, AG, RA;4;;
+347;Projektabschluss;Auf Mängel prüfen;Vertrag;PL, AIF, SV;4;;
+348;Projektabschluss;Mängelbeseitigung durchsetzen;Vertrag;PL, AIF, AG, RA;4;;
+24;Projektabschluss;Vertragsende einleiten;Vertrag;PL, AG, RA;4;23;
+25;Projektvorbereitung;Projektinitiierung;Projektanbahnung;;2;;33,72,112,165,185
+26;Projektvorbereitung;Projektidee/ -entscheidung;Projektanbahnung;;3;;29
+180;Projektvorbereitung;Bedarf / Angebot eines Projektes;Projektanbahnung;AG, I, N, P, Of;4;;181
+181;Projektvorbereitung;Projektziele definieren und beschreiben;Projektanbahnung;AG, AIF, I;4;180;28,182,183,184
+28;Projektvorbereitung;Finanzierung sicherstellen;Projektanbahnung;AG, I, Ba, V;4;181;27
+182;Projektvorbereitung;Machbarkeitsstudie durchführen;Projektanbahnung;AIF, PL, BER, SV;4;181;27
+183;Projektvorbereitung;Wirtschaftlichkeitsanalyse erstellen;Projektanbahnung;AIF, PL, BER, SV;4;181;27
+184;Projektvorbereitung;Budget ermitteln;Projektanbahnung;AG, AIF, BER;4;181;27
+27;Projektvorbereitung;Über Projekt entscheiden;Projektanbahnung;AG, I, AIF;4;28,182,183,184;30,31,32,191,193
+29;Projektvorbereitung;Projektauftrag;Projektanbahnung;;3;26;34,37,73,113,186
+30;Projektvorbereitung;Projektrahmenbedingungen definieren;Projektanbahnung;AG, PL, I;4;27;187
+31;Projektvorbereitung;Terminliche Ziele definieren;Projektanbahnung;AG, I;4;27;74,187
+32;Projektvorbereitung;Qualitative/quantitative Ziele definieren;Projektanbahnung;AG, I;4;27;114,187
+191;Projektvorbereitung;Finanzielle Ziele definieren;Projektanbahnung;AG, I;4;27;187
+33;Projektvorbereitung;Kostenermittlung;Kosten;;2;25;40,52
+34;Projektvorbereitung;Kostenvorgabe;Kosten;;3;29;
+164;Projektvorbereitung;Budget festlegen;Kosten;AG, I, PL;4;30,191;35
+35;Projektvorbereitung;Kostenvorgabe auf Basis des Budget bilden;Kosten;AG, AIF, PL;4;164;39
+192;Projektvorbereitung;Kostenvorgabe auf Basis der KK bilden;Kosten;AG, AIF, PL;4;36;39
+39;Projektvorbereitung;Über Kostenvorgabe entscheiden;Kosten;AG;4;35,192;
+37;Projektvorbereitung;Kostenrahmen;Kosten;;3;29;34,41,52
+36;Projektvorbereitung;Kostenkennwerte (KK) bilden;Kosten;AIF, PS, PM;4;30,32,191;38
+38;Projektvorbereitung;Kostenrahmen auf Basis der KK erstellen;Kosten;AIF, PM;4;36;42,54,192
+208;Projektvorbereitung;Projektbuchhaltung;Kosten;;3;;
+209;Projektvorbereitung;Mittelbedarf planen;Kosten;AG, I, Ba, PL;4;;
+210;Projektvorbereitung;Mittelabfluss konzipieren;Kosten;AG, I, Ba, PL, V;4;;
+211;Projektvorbereitung;Rechnungen prüfen und freigeben;Kosten;PL, PM;4;;
+52;Planung;Kostenermittlung;Kosten;;2;33;60
+212;Planung;Projektbuchhaltung;Kosten;;3;;
+54;Planung;Mittelabfluss einrichten;Kosten;AG, PL, V, I, Ba;4;39;55
+58;Planung;Geplante Finanzierung umsetzen;Kosten;AG, I, V, Ba;4;56;59
+213;Planung;Rechnungen prüfen und freigeben;Kosten;PM, AIF, AG;4;;
+53;Planung;Kostenschätzung;Kosten;;3;37;57
+55;Planung;Kostenrahmen überprüfen;Kosten;AIF, PM, PS;4;54;56
+214;Planung;Kostenkennwerte (KK) bilden;Kosten;AIF, PM, PS;4;;
+56;Planung;Kostenschätzung durchfuehren;Kosten;AIF;4;55;58
+57;Planung;Kostenberechnung;Kosten;;3;53;61
+215;Planung;Kostenkennwerte (KK) bilden;Kosten;AIF, PM, PS;4;56;59
+59;Planung;Kostenberechnung durchführen;Kosten;AIF;4;58;62
+60;Ausführungsvorbereitung;Kostenermittlung;Kosten;;2;52;64
+61;Ausführungsvorbereitung;Kostenanschlag I;Kosten;;3;57;65
+236;Ausführungsvorbereitung;KK bilden;Kosten;AIF, PM, PS;4;;
+238;Ausführungsvorbereitung;Kostenanschlag I erstellen;Kosten;AIF;4;;
+62;Ausführungsvorbereitung;SOLL-Werte für Vergabeeinheiten festlegen;Kosten;AIF, PM, PS;4;59;63
+235;Ausführungsvorbereitung;Kostenanschlag II;Kosten;;3;;
+63;Ausführungsvorbereitung;Kostenanschlag II erstellen;Kosten;AIF;4;62;66
+224;Ausführungsvorbereitung;Kostenanschlag II anpassen;Kosten;AIF;4;;
+223;Ausführungsvorbereitung;Projektbuchhaltung;Kosten;;3;;
+225;Ausführungsvorbereitung;Mittelabfluss planen;Kosten;AG, PL, V, I, Ba;4;;
+226;Ausführungsvorbereitung;Rechnungen prüfen und freigeben;Kosten;PM, AIF, AG;4;;
+64;Ausführung;Kostenermittlung;Kosten;;2;60;68
+65;Ausführung;Kostenverfolgung;Kosten;;3;61;69
+66;Ausführung;Erbrachte Leistungen fortschreiben;Kosten;PM, PS, AIF;4;63;67
+292;Ausführung;Minderungen/Mehrungen einpflegen;Kosten;PM, PS, AIF;4;;
+293;Ausführung;Budget fortschreiben;Kosten;PM, PS, AIF;4;;
+294;Ausführung;Nachtragsmanagement;Kosten;;3;;
+67;Ausführung;Nachträge einpflegen;Kosten;PM, PS, AIF;4;66;70
+295;Ausführung;Erwartete Nachträge kalkulieren;Kosten;PM, PS, AIF, BER, SV;4;;
+296;Ausführung;Projektbuchhaltung;Kosten;;3;;
+297;Ausführung;Mittelabfluss fortschreiben;Kosten;AG, PL, V, I, Ba;4;;
+298;Ausführung;Rechnungen prüfen und freigeben;Kosten;PM, AIF, AG;4;;
+68;Projektabschluss;Kostenermittlung;Kosten;;2;64;
+349;Projektabschluss;Projektbuchhaltung;Kosten;;3;;
+350;Projektabschluss;Mittelabfluss fortschreiben;Kosten;AG, PL, V, I, Ba;4;;
+71;Projektabschluss;Mittelabfluss abschliessen;Kosten;AG, PL, V, I, Ba;4;;
+351;Projektabschluss;Rechnungen prüfen und freigeben;Kosten;PM, AIF, AG;4;;
+352;Projektabschluss;Schlussrechnungen prüfen und freigeben;Kosten;PM, AIF, AG;4;;
+353;Projektabschluss;Nachtragsmanagement;Kosten;;3;;
+354;Projektabschluss;Nachträge einpflegen;Kosten;PM, PS, AIF;4;;
+355;Projektabschluss;Erwartete Nachträge kalkulieren;Kosten;PM, PS, AIF, BER, SV;4;;
+69;Projektabschluss;Kostenfeststellung;Kosten;;3;65;
+356;Projektabschluss;Gesamtkosten ermitteln;Kosten;PM, PS, AIF;4;67;71
+70;Projektabschluss;Kostenkennwerte ermitteln;Kosten;PM, PS, AIF;4;70;
+72;Projektvorbereitung;Terminplanung;Termine;;2;25;79,91
+73;Projektvorbereitung;Meilensteinplanung;Termine;;3;29;76
+74;Projektvorbereitung;Baubeginn und Projektende festlegen;Termine;AG, AIF, PL, PS;4;31;75,203
+75;Projektvorbereitung;Zwischenziele festlegen;Termine;PL, PS, PM, AIF;4;74;77
+203;Projektvorbereitung;Zwangstermine definieren;Termine;AG, I, PL;4;74;77
+76;Projektvorbereitung;Terminrahmen;Termine;;3;73;80,92
+77;Projektvorbereitung;Terminrisiken identifizieren;Termine;PL, PS, PM, BER, SV;4;75,203;78
+78;Projektvorbereitung;Rahmenterminplan erstellen;Termine;PL, PS, PM, AIF;4;77;81,93
+91;Planung;Terminplanung / -fortschreibung;Termine;;2;72;97
+92;Planung;Generalterminplan;Termine;;3;76;98
+96;Planung;Rahmenterminplan fortschreiben;Termine;PM, PS, AIF;4;95;99
+93;Planung;Bauzeit in Abschnitte unterteilen;Termine;PM, PS, AIF;4;78;94
+94;Planung;Zeitliche Abhängigkeiten ermitteln;Termine;PM, PS, AIF;4;93;95
+95;Planung;Vertragstermine u. -fristen übertragen;Termine;PM, AIF, RA;4;94;96
+227;Planung;Generalterminplan entwickeln;Termine;PM, PS, AIF;4;;
+158;Planung;Meilensteinplanung;Termine;;3;;
+415;Planung;Meilensteine überprüfen;Termine;AG, PL, AIF, PS;4;;
+416;Planung;Meilensteine anpassen;Termine;AG, PL, AIF;4;;
+97;Ausführungsvorbereitung;Terminplanung / -fortschreibung;Termine;;2;91;104
+254;Ausführungsvorbereitung;Vergabeterminplan;Termine;;3;;
+255;Ausführungsvorbereitung;Soll-/Ist-Termine der Vergabe ermitteln;Termine;PM, PS, AIF, RA;4;;
+256;Ausführungsvorbereitung;Dauer der Vergabephasen ermitteln;Termine;PM, PS, AIF;4;;
+257;Ausführungsvorbereitung;Vergabeterminplan erstellen;Termine;PM, PS;4;;
+258;Ausführungsvorbereitung;Vergabeterminplan fortschreiben;Termine;PM, PS;4;;
+98;Ausführungsvorbereitung;Generalterminplan;Termine;;3;92;101
+99;Ausführungsvorbereitung;Rahmenterminplan fortschreiben;Termine;PM, PS, AIF;4;96;100
+100;Ausführungsvorbereitung;Vertragstermine übernehmen;Termine;PM, PS, AIF, RA;4;99;102
+259;Ausführungsvorbereitung;Meilensteine anpassen;Termine;AG, PL, AIF;4;;
+101;Ausführungsvorbereitung;Detail-/ Steuerungsterminplan;Termine;;3;98;105
+102;Ausführungsvorbereitung;Generalterminplan fortschreiben;Termine;PM, PS, AIF;4;100;103
+103;Ausführungsvorbereitung;Detail-/ Steuerungsterminplan erstellen;Termine;PM, PS, AIF;4;102;106
+104;Ausführung;Terminfortschreibung;Termine;;2;97;108
+105;Ausführung;Terminverfolgung;Termine;;3;101;109
+106;Ausführung;Rahmenterminplan fortschreiben;Termine;PM, PS, AIF;4;103;107
+107;Ausführung;Generalterminplan fortschreiben;Termine;PM, PS, AIF;4;106;110
+299;Ausführung;Detail-/ Steuerungsterminplan fortschreiben;Termine;PM, PS, AIF;4;;
+300;Ausführung;Abnahme/Gewährleistung;Termine;;3;;
+301;Ausführung;Abnahmetermine aus Verträgen einarbeiten;Termine;PM, PS, AIF;4;;
+302;Ausführung;Abnahmeterminplan erstellen;Termine;PM, PS, AIF;4;;
+303;Ausführung;Verjährungsfristen für Mängel ermitteln;Termine;PM, PS, AIF, RA;4;;
+304;Ausführung;Gewährleistungsverzeichnis erstellen;Termine;PM, PS, AIF, RA;4;;
+108;Projektabschluss;Terminfortschreibung;Termine;;2;104;
+357;Projektabschluss;Terminverfolgung;Termine;;3;;
+358;Projektabschluss;Rahmenterminplan fortschreiben;Termine;PM, PS, AIF;4;;
+359;Projektabschluss;Generalterminplan fortschreiben;Termine;PM, PS, AIF;4;;
+360;Projektabschluss;Detail-/ Steuerungsterminplan fortschreiben;Termine;PM, PS, AIF;4;;
+109;Projektabschluss;Abnahme;Termine;;3;105;
+361;Projektabschluss;Gewährleistungsverzeichnis prüfen;Termine;PM, PS, AIF;4;;
+362;Projektabschluss;Inbetriebnahme planen;Termine;PM, PS, AIF;4;;
+110;Projektabschluss;Abnahme fristgerecht durchführen;Termine;PL, AG, AIF, aF, B, P, Of;4;107;111
+111;Projektabschluss;Ggf. Termine zur Mängelbeseitigung steuern;Termine;PM, PS, AIF;4;110;
+363;Projektabschluss;Übergabe durchführen;Termine;AG, N, P, Of, AIF, I;4;;
+364;Projektabschluss;Bauwerk in Betrieb nehmen;Termine;AG, N, P, Of;4;;
+112;Projektvorbereitung;Beschreibung der Leistung;Leistung;;2;25;119,131
+113;Projektvorbereitung;Nutzerbedarfsprogramm;Leistung;;3;29;116
+114;Projektvorbereitung;Nutzerbedarf ermitteln;Leistung;AG, PL, I, AIF, N, Of, P;4;32;239
+239;Projektvorbereitung;Raum- oder Funktionsprogramm aufstellen;Leistung;AIF;4;114;115,163
+115;Projektvorbereitung;Realisierbare Qualitäten definieren;Leistung;PL, PS, AIF;4;239;117
+163;Projektvorbereitung;Realisierbare Quantitäten definieren;Leistung;PL, PS, AIF;4;239;164
+116;Projektvorbereitung;Leistungsdefinition;Leistung;;3;113;120,132
+117;Projektvorbereitung;Qualitäten modifizieren/optimieren;Leistung;PL, PS, PM, AIF, AG;4;115;118
+128;Projektvorbereitung;Quantitäten modifizieren/optimieren;Leistung;PL, PS, PM, AIF, AG;4;163;118
+118;Projektvorbereitung;Bau-Soll formulieren;Leistung;AG, AIF, PL, SV;4;117,164;240
+240;Projektvorbereitung;Vorplanung erarbeiten;Leistung;AG, AIF, PL, SV;4;118;121,133
+40;Planung;Projektcontrolling;MMD, Kosten, Termine, Leistung, Projektorganisation;;2;112;122
+41;Planung;Kostenkontrolle;Kosten, MMD;;3;37;44
+42;Planung;Kostenrahmen u. -schätzung prüfen;Kosten, MMD;PM, PS, AIF;4;39;45
+216;Planung;Soll-Ist-Wird-Vergleiche durchführen;Kosten, MMD;PM, PS, AIF;4;;
+217;Planung;Kostenprognosen erstellen;Kosten, MMD;PM, PS, AIF;4;;
+218;Planung;Kostenrisiken analysieren;Kosten, MMD;PM, PS, AIF, BER, Ba, SV;4;;
+219;Planung;Kostenschätzung u. -berechnung prüfen;Kosten, MMD;PM, PS, AIF;4;;
+220;Planung;Soll-Ist-Wird-Vergleiche durchführen;Kosten, MMD;PM, PS, AIF;4;;
+221;Planung;Kostenprognosen erstellen;Kosten, MMD;PM, PS, AIF;4;;
+222;Planung;Kostenrisiken analysieren;Kosten, MMD;PM, PS, AIF, BER, Ba, SV;4;;
+80;Planung;Terminkontrolle;Termine, MMD;;3;76;83
+81;Planung;Rahmenterminplanversionen prüfen;Termine, MMD;PM, PS, AIF;4;78;84
+228;Planung;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PM, PS, AIF;4;;
+229;Planung;Terminprognosen erstellen;Termine, MMD;PM, PS, AIF;4;;
+230;Planung;Terminrisiken analysieren;Termine, MMD;PM, PS, AIF, BER, SV;4;;
+231;Planung;Generalterminplanversionen prüfen;Termine, MMD;PM, PS, AIF;4;;
+232;Planung;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PM, PS, AIF;4;;
+233;Planung;Terminprognosen erstellen;Termine, MMD;PM, PS, AIF;4;;
+234;Planung;Terminrisiken analysieren;Termine, MMD;PM, PS, AIF, BER, SV;4;;
+120;Planung;Leistungskontrolle;Leistung, MMD;;3;116;123
+121;Planung;Ergebnisse der Entwurfsplanung prüfen;Leistung, MMD;PM, PS, AIF;4;118;124
+247;Planung;Soll-Ist-Wird-Vergleiche durchführen;Leistung, MMD;PM, PS, AIF;4;;
+248;Planung;Prognosen erstellen;Leistung, MMD;PM, PS, AIF;4;;
+249;Planung;Risiken analysieren;Leistung, MMD;PM, PS, AIF, BER, SV;4;;
+250;Planung;Projektsteuerung;MMD, Kosten, Termine, Leistung, Projektorganisation;;3;;
+251;Planung;Auf Abweichungen prüfen;MMD, Kosten, Termine, Leistung, Projektorganisation;PM, PS, AIF;4;;
+252;Planung;Geeignete Maßnahmen identifizieren;MMD, Kosten, Termine, Leistung, Projektorganisation;PM, PS, AIF, BER, SV, RA, Ba;4;;
+253;Planung;Ausgewählte Maßnahmen ergreifen;MMD, Kosten, Termine, Leistung, Projektorganisation;AG, PL, PM;4;;
+43;Ausführungsvorbereitung;Projektcontrolling;MMD, Kosten, Termine, Leistung, Projektorganisation;;2;40;46
+44;Ausführungsvorbereitung;Kostenkontrolle;Kosten, MMD;;3;41;47
+45;Ausführungsvorbereitung;Kostenberechnung u. -anschlag I prüfen;Kosten, MMD;PM, PS, AIF;4;42;48
+264;Ausführungsvorbereitung;Soll-Ist-Wird-Vergleiche durchführen;Kosten, MMD;PM, PS, AIF;4;;
+265;Ausführungsvorbereitung;Kostenprognosen erstellen;Kosten, MMD;PM, PS, AIF;4;;
+266;Ausführungsvorbereitung;Kostenrisiken analysieren;Kosten, MMD;PM, PS, AIF, BER, SV, Ba;4;;
+267;Ausführungsvorbereitung;Kostenanschlag I und II prüfen;Kosten, MMD;PM, PS, AIF;4;;
+268;Ausführungsvorbereitung;Soll-Ist-Wird-Vergleiche durchführen;Kosten, MMD;PM, PS, AIF;4;;
+269;Ausführungsvorbereitung;Kostenprognosen erstellen;Kosten, MMD;PM, PS, AIF;4;;
+270;Ausführungsvorbereitung;Kostenrisiken analysieren;Kosten, MMD;PM, PS, AIF, BER, SV, Ba;4;;
+83;Ausführungsvorbereitung;Terminkontrolle;Termine, MMD;;3;80;86
+84;Ausführungsvorbereitung;Rahmenterminplanversionen prüfen;Termine, MMD;PM, PS, AIF, aF;4;81;87
+271;Ausführungsvorbereitung;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PM, PS, AIF;4;;
+272;Ausführungsvorbereitung;Terminprognosen erstellen;Termine, MMD;PM, PS, AIF, aF;4;;
+273;Ausführungsvorbereitung;Terminrisiken analysieren;Termine, MMD;PM, PS, AIF, BER, SV;4;;
+82;Ausführungsvorbereitung;Generalterminplanversionen prüfen;Termine, MMD;PM, PS, AIF, aF;4;;
+274;Ausführungsvorbereitung;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PM, PS, AIF;4;;
+275;Ausführungsvorbereitung;Terminprognosen erstellen;Termine, MMD;PM, PS, AIF, aF;4;;
+276;Ausführungsvorbereitung;Terminrisiken analysieren;Termine, MMD;PM, PS, AIF, BER, SV;4;;
+122;Ausführungsvorbereitung;Detail-/ Strg.sterminplanversionen prüfen;Termine, MMD;PM, PS, AIF, aF;4;;
+277;Ausführungsvorbereitung;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PM, PS, AIF;4;;
+278;Ausführungsvorbereitung;Terminprognosen erstellen;Termine, MMD;PM, PS, AIF, aF;4;;
+279;Ausführungsvorbereitung;Terminrisiken analysieren;Termine, MMD;PM, PS, AIF, BER, SV;4;;
+123;Ausführungsvorbereitung;Leistungskontrolle;Leistung, MMD;;3;120;126
+124;Ausführungsvorbereitung;Ergebnisse der Ausführungsplanung prüfen;Leistung, MMD;PM, PS, AIF;4;121;127
+280;Ausführungsvorbereitung;Soll-Ist-Wird-Vergleiche durchführen;Leistung, MMD;PM, PS, AIF;4;;
+281;Ausführungsvorbereitung;Prognosen erstellen;Leistung, MMD;PM, PS, AIF;4;;
+282;Ausführungsvorbereitung;Risiken analysieren;Leistung, MMD;PM, PS, AIF, BER, SV;4;;
+283;Ausführungsvorbereitung;Leistungsbeschreibung prüfen;Leistung, MMD;PM, PS, AIF;4;;
+284;Ausführungsvorbereitung;Leistungsverzeichnis prüfen;Leistung, MMD;PM, PS, AIF;4;;
+285;Ausführungsvorbereitung;Projektsteuerung;MMD, Kosten, Termine, Leistung, Projektorganisation;;3;;
+286;Ausführungsvorbereitung;Auf Abweichungen prüfen;MMD, Kosten, Termine, Leistung, Projektorganisation;PM, PS, AIF;4;;
+287;Ausführungsvorbereitung;Geeignete Maßnahmen identifizieren;MMD, Kosten, Termine, Leistung, Projektorganisation;PM, PS, AIF, BER, SV, RA, Ba;4;;
+288;Ausführungsvorbereitung;Ausgewählte Maßnahmen ergreifen;MMD, Kosten, Termine, Leistung, Projektorganisation;AG, PL, PM;4;;
+46;Ausführung;Projektcontrolling;MMD, Kosten, Termine, Leistung, Projektorganisation;;2;43;49
+47;Ausführung;Kostenkontrolle;Kosten, MMD;;3;44;50
+48;Ausführung;Kostenanschlag und Leistungsstand prüfen;Kosten, MMD;PM, PS, AIF;4;45;51
+85;Ausführung;Soll-Ist-Wird-Vergleiche durchführen;Kosten, MMD;PM, PS, AIF;4;;
+125;Ausführung;Kostenprognosen erstellen;Kosten, MMD;PM, PS, AIF;4;;
+308;Ausführung;Kostenrisiken analysieren;Kosten, MMD;PM, PS, AIF;4;;
+309;Ausführung;Leistungsstand und Budget prüfen;Kosten, MMD;PM, PS, AIF;4;;
+310;Ausführung;Nachträge prüfen;Kosten, MMD;PM, PS, AIF;4;;
+311;Ausführung;Soll-Ist-Wird-Vergleiche durchführen;Kosten, MMD;PM, PS, AIF;4;;
+312;Ausführung;Kostenprognosen erstellen;Kosten, MMD;PM, PS, AIF, BER;4;;
+313;Ausführung;Kostenrisiken analysieren;Kosten, MMD;PM, PS, AIF;4;;
+314;Ausführung;Leistungsstand und Budget prüfen;Kosten, MMD;PM, PS, AIF;4;;
+86;Ausführung;Terminkontrolle;Termine, MMD;;3;82;88
+87;Ausführung;Rahmenterminplanversionen prüfen;Termine, MMD;PL, PM, PS;4;83;89
+315;Ausführung;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PS, PM;4;84;90
+316;Ausführung;Terminprognosen erstellen;Termine, MMD;PL, PM, PS;4;;
+317;Ausführung;Terminrisiken analysieren;Termine, MMD;PL, PM, PS, BER, SV;4;;
+318;Ausführung;Generalterminplanversionen prüfen;Termine, MMD;PL, PM, PS;4;;
+319;Ausführung;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PS, PM;4;;
+320;Ausführung;Terminprognosen erstellen;Termine, MMD;PL, PM, PS;4;;
+321;Ausführung;Terminrisiken analysieren;Termine, MMD;PL, PM, PS, BER, SV;4;;
+322;Ausführung;Detail-/ Strg.sterminplanversionen prüfen;Termine, MMD;PL, PM, PS;4;;
+323;Ausführung;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PS, PM;4;;
+324;Ausführung;Terminprognosen erstellen;Termine, MMD;PL, PM, PS;4;;
+325;Ausführung;Terminrisiken analysieren;Termine, MMD;PL, PM, PS, BER, SV;4;;
+126;Ausführung;Leistungskontrolle;Leistung, MMD;;3;122;128
+127;Ausführung;Vertragsleistung und Leistungsstand prüfen;Leistung, MMD;AG, PL, AIF;4;123;129
+326;Ausführung;Soll-Ist-Wird-Vergleiche durchführen;Leistung, MMD;PS, PM, AIF;4;124;130
+327;Ausführung;Prognosen erstellen;Leistung, MMD;PL, PM, PS, AIF;4;;
+328;Ausführung;Risiken analysieren;Leistung, MMD;PL, PM, PS, AIF, BER, SV;4;;
+329;Ausführung;Nachträge prüfen;Leistung, MMD;AG, PL, AIF;4;;
+330;Ausführung;Soll-Ist-Wird-Vergleiche durchführen;Leistung, MMD;PS, PM, AIF;4;;
+331;Ausführung;Prognosen erstellen;Leistung, MMD;PL, PM, PS, AIF;4;;
+332;Ausführung;Risiken analysieren;Leistung, MMD;PL, PM, PS, AIF, BER, SV;4;;
+333;Ausführung;Auf Mängel prüfen;Leistung, MMD;AG, PL, AIF;4;;
+334;Ausführung;Soll-Ist-Wird-Vergleiche durchführen;Leistung, MMD;PS, PM, AIF;4;;
+335;Ausführung;Prognosen erstellen;Leistung, MMD;PL, PM, PS, AIF;4;;
+336;Ausführung;Risiken analysieren;Leistung, MMD;PL, PM, PS, AIF, BER, SV;4;;
+337;Ausführung;Projektsteuerung;MMD, Kosten, Termine, Leistung, Projektorganisation;;3;;
+338;Ausführung;Auf Abweichungen prüfen;MMD, Kosten, Termine, Leistung, Projektorganisation;PM, PS, AIF;4;;
+339;Ausführung;Geeignete Maßnahmen identifizieren;MMD, Kosten, Termine, Leistung, Projektorganisation;PM, PS, AIF, BER, SV, RA, Ba;4;;
+340;Ausführung;Ausgewählte Maßnahmen ergreifen;MMD, Kosten, Termine, Leistung, Projektorganisation;AG, PL, PM;4;;
+49;Projektabschluss;Projektcontrolling;MMD, Kosten, Termine, Leistung, Projektorganisation;;2;46;
+50;Projektabschluss;Kostenkontrolle;Kosten, MMD;;3;47;
+51;Projektabschluss;Kostenanschlag und Leistungsstand prüfen;Kosten, MMD;PM, PS, AIF;4;48;
+374;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Kosten, MMD;PM, PS, AIF;4;;
+375;Projektabschluss;Kostenprognosen erstellen;Kosten, MMD;PM, PS, AIF;4;;
+376;Projektabschluss;Kostenrisiken analysieren;Kosten, MMD;PM, PS, AIF, BER, SV, Ba;4;;
+377;Projektabschluss;Leistungsstand und Budget prüfen;Kosten, MMD;PM, PS, AIF;4;;
+378;Projektabschluss;Nachträge prüfen;Kosten, MMD;PM, PS, AIF;4;;
+379;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Kosten, MMD;PM, PS, AIF;4;;
+380;Projektabschluss;Kostenprognosen erstellen;Kosten, MMD;PM, PS, AIF;4;;
+381;Projektabschluss;Kostenrisiken analysieren;Kosten, MMD;PM, PS, AIF, BER, SV, Ba;4;;
+382;Projektabschluss;Leistungsstand und Budget prüfen;Kosten, MMD;PM, PS, AIF;4;;
+383;Projektabschluss;Kostenfeststellung und -rahmen prüfen;Kosten, MMD;PM, PS, AIF;4;;
+384;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Kosten, MMD;PM, PS, AIF;4;;
+88;Projektabschluss;Terminkontrolle;Termine, MMD;;3;85;
+89;Projektabschluss;Rahmenterminplanversionen prüfen;Termine, MMD;PL, PM, PS;4;86;
+90;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PS, PM;4;87;
+385;Projektabschluss;Terminprognosen erstellen;Termine, MMD;PL, PM, PS;4;;
+386;Projektabschluss;Terminrisiken analysieren;Termine, MMD;PL, PM, PS, BER, SV;4;;
+387;Projektabschluss;Generalterminplanversionen prüfen;Termine, MMD;PL, PM, PS;4;;
+388;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PS, PM;4;;
+389;Projektabschluss;Terminprognosen erstellen;Termine, MMD;PL, PM, PS;4;;
+390;Projektabschluss;Terminrisiken analysieren;Termine, MMD;PL, PM, PS, BER, SV;4;;
+391;Projektabschluss;Detail-/ Strg.sterminplanversionen prüfen;Termine, MMD;PL, PM, PS;4;;
+392;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PS, PM;4;;
+393;Projektabschluss;Terminprognosen erstellen;Termine, MMD;PL, PM, PS;4;;
+394;Projektabschluss;Terminrisiken analysieren;Termine, MMD;PL, PM, PS, BER, SV;4;;
+395;Projektabschluss;Abnahmeterminplan prüfen;Termine, MMD;PL, PM, PS;4;;
+396;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Termine, MMD;PS, PM;4;;
+397;Projektabschluss;Terminprognosen erstellen;Termine, MMD;PL, PM, PS;4;;
+398;Projektabschluss;Terminrisiken analysieren;Termine, MMD;PL, PM, PS, BER, SV;4;;
+129;Projektabschluss;Leistungskontrolle;Leistung, MMD;;3;126;
+130;Projektabschluss;Vertragsleistung und Leistungsstand prüfen;Leistung, MMD;PL, PM, PS;4;127;
+399;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Leistung, MMD;PS, PM, AIF;4;124;130
+400;Projektabschluss;Prognosen erstellen;Leistung, MMD;PL, PM, PS, AIF;4;;
+401;Projektabschluss;Risiken analysieren;Leistung, MMD;PL, PM, PS, AIF, BER, SV;4;;
+402;Projektabschluss;Nachträge prüfen;Leistung, MMD;AG, PL, AIF;4;;
+403;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Leistung, MMD;PS, PM, AIF;4;;
+404;Projektabschluss;Prognosen erstellen;Leistung, MMD;PL, PM, PS, AIF;4;;
+405;Projektabschluss;Risiken analysieren;Leistung, MMD;PL, PM, PS, AIF, BER, SV;4;;
+406;Projektabschluss;Auf Mängel prüfen;Leistung, MMD;AG, PL, AIF;4;;
+407;Projektabschluss;Soll-Ist-Wird-Vergleiche durchführen;Leistung, MMD;PS, PM, AIF;4;;
+408;Projektabschluss;Prognosen erstellen;Leistung, MMD;PL, PM, PS, AIF;4;;
+409;Projektabschluss;Risiken analysieren;Leistung, MMD;PL, PM, PS, AIF, BER, SV;4;;
+410;Projektabschluss;Projektsteuerung;MMD, Kosten, Termine, Leistung, Projektorganisation;;3;;
+411;Projektabschluss;Auf Abweichungen prüfen;MMD, Kosten, Termine, Leistung, Projektorganisation;PM, PS, AIF;4;;
+412;Projektabschluss;Geeignete Maßnahmen identifizieren;MMD, Kosten, Termine, Leistung, Projektorganisation;PM, PS, AIF, BER, SV, RA, Ba;4;;
+413;Projektabschluss;Ausgewählte Maßnahmen ergreifen;MMD, Kosten, Termine, Leistung, Projektorganisation;AG, PL, PM;4;;
+414;Projektabschluss;Nutzung;MMD, Kosten, Termine, Leistung, Projektorganisation;AG, N;4;;
+131;Planung;Leistungsfortschreibung;Leistung;;2;112;138
+132;Planung;Entwurfsplanung;Leistung;;3;116;135
+133;Planung;Qualitätsstandards festlegen;Leistung;AG, PL, AIF;4;118;134
+241;Planung;Pflichtenheft erstellen;Leistung;PL, AIF;4;;
+246;Planung;Raumbuch erstellen;Leistung;AIF, PM;4;;
+134;Planung;Konzeption der Bemusterung erstellen;Leistung;AIF, PM;4;133;136
+242;Planung;Entwurfsplanung erstellen;Leistung;AIF;4;;
+135;Planung;Genehmigungsplanung;Leistung;;3;132;139
+136;Planung;Planungsentscheidungen herbeiführen;Leistung;AG, PS, PL, AIF;4;134;137
+260;Planung;Leistungsbeschreibung erstellen;Leistung;AIF;4;136;137
+243;Planung;Vorlagen und Nachweise erarbeiten;Leistung;AIF, SV, BER, V, B, RA;4;136;137
+137;Planung;Genehmigungsfähige Planung aufstellen;Leistung;PL, AIF, RA;4;136;140
+244;Planung;Planungsunterlagen bei Behörde einreichen;Leistung;PL, AIF, B;4;;
+245;Planung;Baugenehmigung erhalten;Leistung;AG, B;4;;
+138;Ausführungsvorbereitung;Leistungsfortschreibung;Leistung;;2;131;147
+139;Ausführungsvorbereitung;Ausführungsplanung;Leistung;;3;135;144
+140;Ausführungsvorbereitung;Planung fortschreiben;Leistung;AIF, AG;4;245;141
+141;Ausführungsvorbereitung;Ausführungsplanung erstellen;Leistung;AIF;4;140;142
+142;Ausführungsvorbereitung;Raumbuch anpassen;Leistung;AIF, PM;4;141;143
+143;Ausführungsvorbereitung;Bemusterung anpassen;Leistung;AIF;4;142;145,261
+261;Ausführungsvorbereitung;Leistungsbeschreibung anpassen;Leistung;AIF;4;143;262
+144;Ausführungsvorbereitung;Leistungsbeschreibung;Leistung;;3;139;148
+145;Ausführungsvorbereitung;LV-Positionen festlegen;Leistung;AIF;4;143;146,262
+146;Ausführungsvorbereitung;Massenermittlungen durchführen;Leistung;AIF, PM;4;145;263
+262;Ausführungsvorbereitung;Leistungsverzeichnis erstellen;Leistung;AIF, PM;4;145,261;263
+263;Ausführungsvorbereitung;Leistungsbeschreibung anpassen;Leistung;AIF, PM;4;146,262;
+147;Ausführung;Leistungsfortschreibung;Leistung;;2;138;155
+148;Ausführung;Überwachung der Ausführung;Leistung;;3;144;156
+150;Ausführung;Leistungsstand überwachen;Leistung;PM, PS, AIF;4;149;151
+153;Ausführung;Vertragsleistung mit Ausführung abgleichen;Leistung;PM, PS, AIF;4;152;154
+152;Ausführung;Nachträge prüfen;Leistung;PM, PS, AIF, RA, aF;4;151;153
+149;Ausführung;Technische Risiken einschätzen;Leistung;PL, PM, PS, AIF, BER, SV;4;146;150
+305;Ausführung;Erwartete Nachträge einschätzen;Leistung;PL, PM, PS, AIF, BER, SV;4;;
+306;Ausführung;Überwachung der Qualität;Leistung;;3;;
+307;Ausführung;Auf Mängel prüfen;Leistung;PM, PS, AIF, SV;4;;
+151;Ausführung;Beweissicherungsverfahren anwenden;Leistung;PM, AIF, RA, V, SV;4;150;152
+154;Ausführung;Mängelbeseitigung koordinieren;Leistung;PM, PS, AIF, aF;4;153;157
+155;Projektabschluss;Leistungsfortschreibung;Leistung;;2;147;
+365;Projektabschluss;Überwachung der Ausführung;Leistung;;3;;
+366;Projektabschluss;Leistungsstand überwachen;Leistung;PM, PS, AIF;4;;
+367;Projektabschluss;Vertragsleistung mit Ausführung abgleichen;Leistung;PM, PS, AIF;4;;
+368;Projektabschluss;Nachträge prüfen;Leistung;PM, PS, AIF, RA, aF;4;;
+369;Projektabschluss;Technische Risiken einschätzen;Leistung;PL, PM, PS, AIF, BER, SV;4;;
+370;Projektabschluss;Erwartete Nachträge einschätzen;Leistung;PL, PM, PS, AIF, BER, SV;4;;
+371;Projektabschluss;Überwachung der Qualität;Leistung;;3;;
+372;Projektabschluss;Auf Mängel prüfen;Leistung;PM, PS, AIF, SV;4;;
+159;Projektabschluss;Mängelbeseitigung koordinieren;Leistung;PM, AIF, RA, V, SV;4;;
+373;Projektabschluss;Beweissicherungsverfahren anwenden;Leistung;PM, PS, AIF, aF;4;;
+156;Projektabschluss;Abnahme/Gewährleistung;Leistung;;3;148;
+157;Projektabschluss;Funktionsprüfung durchführen;Leistung;PM, AIF, SV, N;4;154;158
+160;Projektabschluss;Gebäude- u. Raumbuch aktualisieren;Leistung;PM, PS, AIF;4;159;161
+161;Projektabschluss;Gewährleistungsverzeichnis erstellen;Leistung;PM, PS, AIF, RA;4;160;
+165;Projektvorbereitung;Projektentstehung;Projektorganisation;;2;25;166
+170;Projektvorbereitung;Projektkultur;Projektorganisation;;3;26;194
+193;Projektvorbereitung;Aufbauorganisation bilden;Projektorganisation;AG;4;27;171
+171;Projektvorbereitung;Kommunikationsstruktur festlegen;Projektorganisation;AG;4;193;195,196
+195;Projektvorbereitung;Berichtswesenstruktur festlegen;Projektorganisation, MMD;AG, PL;4;171;197,198
+196;Projektvorbereitung;Aussendarstellung konzeptionell festlegen;Projektorganisation, MMD;AG, PL, P, Of;4;171;197
+197;Projektvorbereitung;Kommunikationspolitik formulieren;Projektorganisation, MMD;AG, PL;4;195,196;
+194;Projektvorbereitung;Projektstruktur;Projektorganisation;;3;170;172
+198;Projektvorbereitung;Aufbauorganisation festlegen;Projektorganisation;AG, PL;4;193,195;199,202
+199;Projektvorbereitung;Entscheidungsbefugnisse festlegen;Projektorganisation, MMD;AG, PL;4;198,201,202;200
+200;Projektvorbereitung;Weisungsbefugnisse festlegen;Projektorganisation, MMD;AG, PL;4;199;173
+202;Projektvorbereitung;Projektcontrolling aufbauen;Projektorganisation, MMD;AG, PL, PS, BER;4;198;199,201
+201;Projektvorbereitung;Risikomanagement aufbauen;Projektorganisation, MMD;AG, PL, PS, BER;4;202;199
+166;Planung;Projektplanung;Projektorganisation;;2;;
+172;Planung;Projektkultur;Projektorganisation;;3;;
+173;Planung;Kommunikationssystem pflegen;Projektorganisation;PM;4;200;175
+419;Planung;Projektbeteiligte integrieren;Projektorganisation;PL, PM, AG;4;;
+420;Planung;Projekt gegenüber Umwelt vertreten;Projektorganisation;PL, AG, P, Of;4;;
+421;Planung;Werte des Auftraggebers integrieren;Projektorganisation;AG, PL;4;;
+422;Planung;Projektgespräche führen;Projektorganisation;PL, PM, PS, AG, RA, BER, AIF, I, Ba;4;;
+417;Planung;Projektdokumentation;Projektorganisation;;3;;
+423;Planung;Berichte und Protokolle festlegen;Projektorganisation, MMD;AG, PL, PM;4;;
+424;Planung;Projekthandbuch erstellen;Projektorganisation, MMD;PL, PM, AIF;4;;
+425;Planung;Berichtswesen aufbauen und pflegen;Projektorganisation, MMD;AG, PL, PM;4;;
+418;Planung;Projektstruktur;Projektorganisation;;3;;
+426;Planung;Aufbauorganisation pflegen;Projektorganisation;AG, PL;4;;
+427;Planung;Ablauforganisation festlegen;Projektorganisation;PL, PM;4;;
+428;Planung;Projektstrukturplan erstellen;Projektorganisation;PL, PM;4;;
+429;Planung;Schnittstellen und Abhängigkeiten definieren;Projektorganisation, MMD;PL, PM;4;;
+167;Ausführungsvorbereitung;Projektplanung;Projektorganisation;;2;;
+174;Ausführungsvorbereitung;Projektkultur;Projektorganisation;;3;;
+175;Ausführungsvorbereitung;Kommunikationssystem pflegen;Projektorganisation;PM;4;173;177
+432;Ausführungsvorbereitung;Projektbeteiligte integrieren;Projektorganisation;PL, PM, AG;4;;
+433;Ausführungsvorbereitung;Projekt gegenüber Umwelt vertreten;Projektorganisation;PL, AG, P, Of;4;;
+434;Ausführungsvorbereitung;Projektgespräche führen;Projektorganisation;PL, PM, PS, AG, RA, BER, AIF, I, Ba;4;;
+430;Ausführungsvorbereitung;Projektdokumentation;Projektorganisation;;3;;
+435;Ausführungsvorbereitung;Berichte und Protokolle pflegen;Projektorganisation;AG, PL, PM;4;;
+436;Ausführungsvorbereitung;Projekthandbuch fortschreiben;Projektorganisation;PL, PM, AIF;4;;
+437;Ausführungsvorbereitung;Berichtswesen pflegen;Projektorganisation;AG, PL, PM;4;;
+431;Ausführungsvorbereitung;Projektstruktur;Projektorganisation;;3;;
+438;Ausführungsvorbereitung;Projektstrukturplan fortschreiben;Projektorganisation, MMD;PM;4;;
+439;Ausführungsvorbereitung;Aufbauorganisation pflegen;Projektorganisation, MMD;AG, PL;4;;
+440;Ausführungsvorbereitung;Ablauforganisation fortschreiben;Projektorganisation, MMD;PL, PM;4;;
+168;Ausführung;Projektbegleitung;Projektorganisation;;2;;
+176;Ausführung;Projektkultur;Projektorganisation;;3;;
+177;Ausführung;Kommunikationssystem pflegen;Projektorganisation;PM;4;175;179
+443;Ausführung;Projektbeteiligte integrieren;Projektorganisation;PL, PM, AG;4;;
+444;Ausführung;Projekt gegenüber Umwelt vertreten;Projektorganisation;PL, AG, P, Of;4;;
+445;Ausführung;Projektgespräche führen;Projektorganisation;PL, PM, PS, AG, RA, BER, AIF, I, Ba;4;;
+441;Ausführung;Projektdokumentation;Projektorganisation;;3;;
+446;Ausführung;Berichte und Protokolle pflegen;Projektorganisation;AG, PL, PM;4;;
+447;Ausführung;Projekthandbuch fortschreiben;Projektorganisation;PL, PM, AIF;4;;
+448;Ausführung;Berichtswesen pflegen;Projektorganisation;AG, PL, PM;4;;
+442;Ausführung;Projektstruktur;Projektorganisation;;3;;
+449;Ausführung;Projektstrukturplan fortschreiben;Projektorganisation, MMD;PM;4;;
+450;Ausführung;Aufbauorganisation pflegen;Projektorganisation, MMD;AG, PL;4;;
+451;Ausführung;Ablauforganisation fortschreiben;Projektorganisation, MMD;PL, PM;4;;
+169;Projektabschluss;Projektende;Projektorganisation;;2;;
+178;Projektabschluss;Projektkultur;Projektorganisation;;3;;
+179;Projektabschluss;Kommunikationssystem pflegen;Projektorganisation;PM;4;177;
+454;Projektabschluss;Projektbeteiligte integrieren;Projektorganisation;PL, PM, AG;4;;
+455;Projektabschluss;Projekt gegenüber Umwelt vertreten;Projektorganisation;PL, AG, P, Of;4;;
+456;Projektabschluss;Projektgespräche führen;Projektorganisation;PL, PM, PS, AG, RA, BER, AIF, I, Ba;4;;
+452;Projektabschluss;Projektdokumentation;Projektorganisation;;3;;
+457;Projektabschluss;Berichte und Protokolle pflegen;Projektorganisation;AG, PL, PM;4;;
+458;Projektabschluss;Projekthandbuch fortschreiben;Projektorganisation;PL, PM, AIF;4;;
+459;Projektabschluss;Berichtswesen pflegen;Projektorganisation;AG, PL, PM;4;;
+460;Projektabschluss;Archivierung vornehmen;Projektorganisation, MMD;PM, AIF;4;;
+461;Projektabschluss;Dokumentation an Nutzer übergeben;Projektorganisation, MMD;PL, N;4;;
+453;Projektabschluss;Projektstruktur;Projektorganisation;;3;;
+462;Projektabschluss;Projektstruktur auflösen;Projektorganisation, MMD;AG, PL;4;;
