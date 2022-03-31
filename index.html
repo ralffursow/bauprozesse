@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bauprozesse</title>
+</head>
+<header>
+    <img src="img/jade_logo.png" alt="Jade Logo">
+    
+</header>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+
+    <h2>Gantt Diagramm Test:</h2>
+    <div class="mermaid">
+        gantt
+            title Bauprozesse
+            dateFormat  YYYY-MM-DD
+            section Section
+            A task           :a1, 2014-01-01, 30d
+            Another task     :after a1  , 20d
+            section Another
+            Task in sec      :2014-01-12  , 12d
+            another task      : 24d
+    </div>
+</body>
+
+</html>
