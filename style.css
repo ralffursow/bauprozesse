@@ -5,6 +5,6 @@ img {
 }
 
 .dropshadow {
-    -webkit-box-shadow: 5px 17px 13px -9px rgba(105, 105, 105, 0.6);
-    box-shadow: 5px 17px 13px -9px rgba(105, 105, 105, 0.6);
+    -webkit-box-shadow: 2px 10px 13px -9px rgba(105, 105, 105, 0.6);
+    box-shadow: 2px 10px 13px -9px rgba(105, 105, 105, 0.6);
 }
