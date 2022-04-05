@@ -3,3 +3,8 @@ img {
     padding: 5px;
     width: 150px;
 }
+
+.dropshadow {
+    -webkit-box-shadow: 5px 17px 13px -9px rgba(105, 105, 105, 0.6);
+    box-shadow: 5px 17px 13px -9px rgba(105, 105, 105, 0.6);
+}
