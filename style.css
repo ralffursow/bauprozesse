@@ -1,8 +1,8 @@
 h2 {
-    color: black;    
+    color: black;
 }
 
-/* Header Bild */  
+/* Header Bild */
 
 img {
     text-align: left;
@@ -11,20 +11,14 @@ img {
     width: 150px;
 }
 
-<<<<<<< HEAD
-.dropshadow {
-    -webkit-box-shadow: 2px 10px 13px -9px rgba(105, 105, 105, 0.6);
-    box-shadow: 2px 10px 13px -9px rgba(105, 105, 105, 0.6);
-}
-=======
 /* Navigation Header */
 
 .topnav {
     overflow: hidden;
     float: right;
- }
+}
 
- .topnav a {
+.topnav a {
     float: left;
     display: block;
     text-align: center;
@@ -41,4 +35,3 @@ img {
 .topnav li {
     list-style-type: none;
 }
->>>>>>> 6fa73221e01af5f7921111d657c66e1ca71cfa62
