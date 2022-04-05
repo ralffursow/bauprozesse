@@ -9,8 +9,19 @@
     <title>Bauprozesse</title>
 </head>
 <header>
-    <img src="img/jade_logo.png" alt="Jade Logo">
-    
+     <!-- Logo 1 -->
+     <div id="logo">
+        <a href="https://www.jade-hs.de" target="_blank">
+            <img src="img/jade_logo.png" alt="Jade Logo">
+        </a>
+    </div>
+     <!-- Navigation -->
+     <div class="topnav" id="myTopnav">
+        <a href="#ebene2"><li>Ebene 2</li></a>
+        <a href="#ebene3"><li>Ebene 3</li></a>
+        <a href="#ebene4"><li>Ebene 4</li></a>
+    </div>
+
 </header>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
@@ -18,18 +29,58 @@
         mermaid.initialize({ startOnLoad: true });
     </script>
 
-    <h2>Gantt Diagramm Test:</h2>
+    <section id="ebene2">
+    <h2>Bauprozesse Ebene 2:</h2>
     <div class="mermaid">
         gantt
-            title Bauprozesse
-            dateFormat  YYYY-MM-DD
-            section Section
-            A task           :a1, 2014-01-01, 30d
-            Another task     :after a1  , 20d
-            section Another
-            Task in sec      :2014-01-12  , 12d
-            another task      : 24d
+            title Projektvorbereitung
+            dateFormat YYYY-MM-DD
+            section Ebene 2
+
+            % Meilenstein 1
+            Initial milestone : milestone, m1, 2022-03-29,2min
+
+            % Prozesse
+            Projektentstehung :2022-03-29 , 10d
+            Vertragsinitiierung : 10d
+            Projektinitiierung : 10d
+            Kostenermittlung : 10d
+            Terminplanung : 10d
+            Beschreibung der Leistung : 10d
+
+            % Meilenstein 2
+            Final milestone : milestone, m2, 2022-05-28,2min
     </div>
+
+    <section id="ebene3">
+        <h2>Bauprozesse Ebene 3:</h2>
+        <div class="mermaid">
+            gantt
+                title Projektentstehung
+                dateFormat YYYY-MM-DD
+                section Ebene 3
+    
+                % Prozesse
+                Projektkultur :2022-03-29 , 10d
+                Projektstruktur : 10d
+        </div>
+
+        <section id="ebene4">
+            <h2>Bauprozesse Ebene 4:</h2>
+            <div class="mermaid">
+                gantt
+                    title Projektkultur
+                    dateFormat YYYY-MM-DD
+                    section Ebene 4
+ 
+                    % Prozesse
+                    Aufbauorganisation bilden :2022-03-29 , 10d
+                    Kommunikationsstruktur festlegen : 10d
+                    Berichtswesenstruktur festlegen : 10d
+                    Außendarstellung konzeptionell festlegen : 10d
+                    Kommunikationspolitik formulieren : 10d
+            </div>
+</section>
 </body>
 
 </html>

@@ -1,5 +1,37 @@
+h2 {
+    color: black;    
+}
+
+/* Header Bild */  
+
 img {
+    text-align: left;
     border-radius: 4px;
     padding: 5px;
     width: 150px;
+}
+
+/* Navigation Header */
+
+.topnav {
+    overflow: hidden;
+    float: right;
+ }
+
+ .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.topnav a:hover {
+    color: #333;
+}
+
+.topnav li {
+    list-style-type: none;
 }
