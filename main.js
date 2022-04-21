@@ -1,6 +1,6 @@
 //das html element, wo das diagramm angezeigt wird
 const divMermaid = document.getElementById('ebene2');
-
+console.log('Hallo, los gehts!');
 //hier werden alle prozesse gespeichert
 let alleProzesse = [];
 //die prozesse aus der lokalen datei alleProzesse.json lesen
@@ -34,10 +34,12 @@ const createMermaidProzess = (prozess, startdatum) => {
 
 getProzesse().then((prozesse) => {
   alleProzesse = prozesse;
+  console.log(alleProzesse);
   //es gibt zwei sichten (auftraggeber und auftragnehmer), daher müssen diese zuerst gefiltert werden (unterschiedliche prozesse)
   let auftraggeberProzesse = alleProzesse.filter(
     (prozess) => prozess.perspektive === 'Auftraggeber'
   );
+  console.log(auftraggeberProzesse);
   //nur die prozesse der zweiten ebene filtern
   auftraggeberProzesse = auftraggeberProzesse.filter(
     (prozess) => prozess.ebene === 2
@@ -50,8 +52,12 @@ getProzesse().then((prozesse) => {
   addDauer(startProzess);
   createMermaidProzess(startProzess, '2022-03-22');
 
+  printNachfolger(startProzess);
+});
+
+const printNachfolger = (prozess) => {
   //die nachfolger (id) des startprozesses auslesen
-  let nachfolger = startProzess?.next.split(',');
+  let nachfolger = prozess?.next.split(',');
   //schleife über die nachfolger
   for (let i = 0; i < nachfolger.length; i++) {
     //der nachfolger wird ausgelesen
@@ -60,4 +66,4 @@ getProzesse().then((prozesse) => {
     addDauer(nachfolgerProzess);
     createMermaidProzess(nachfolgerProzess);
   }
-});
+};
