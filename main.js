@@ -23,11 +23,13 @@ const addDauer = (prozess) => {
 //einen prozess in dem mermaid syntax erstellen
 const createMermaidProzess = (prozess, startdatum) => {
   //nur ein startdatum hinzufügen, wenn eines existiert
-  const startStr = startdatum ? `${startdatum},` : '';
+  const startStr = startdatum ? `${startdatum}` : `after p${prozess?.pre}`;
   //die dauer in tagen
   const tageCount = `${prozess.dauer}d`;
   //den syntayx für mermaid erstellen
-  const mermaidSyntax = `${prozess.name}: ${startStr} ${tageCount}\n`;
+  const mermaidSyntax = `${prozess.name}: p${prozess.id},${startStr},${tageCount}\n`;
+
+  console.log(mermaidSyntax);
   //das ganze zu dem html element hinzufügen
   divMermaid.innerHTML += mermaidSyntax;
 };
