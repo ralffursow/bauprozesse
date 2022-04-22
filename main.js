@@ -48,6 +48,7 @@ getProzesse().then((prozesse) => {
 });
 
 const printNachfolger = (prozess) => {
+  if (!prozess) return;
   //die nachfolger (id) des startprozesses auslesen
   let nachfolger = prozess?.next.split(',');
   //manchmal sind als nachfolger nur leere strings drin, diese entfernen
@@ -61,7 +62,7 @@ const printNachfolger = (prozess) => {
     //der nachfolger wird ausgelesen
     let nachfolgerProzess = getProzessById(parseInt(nachfolger[i]));
     //nur prozesse der zweiten ebene ausgeben
-    if (nachfolgerProzess.ebene !== 2) {
+    if (!nachfolgerProzess || nachfolgerProzess.ebene !== 2) {
       continue;
     }
     //die dauer für jeden prozess hinzufügen
@@ -73,8 +74,8 @@ const printNachfolger = (prozess) => {
   alle nachfolger des starprozesses sind an dieser Stelle ausgegeben
   jetzt müssen die nachfolger der nachfolger ausgegeben werden
   */
-  // for (let i = 0; i < nachfolger.length; i++) {
-  //   let nachfolgerProzess = getProzessById(parseInt(nachfolger[i]));
-  //   printNachfolger(nachfolgerProzess);
-  // }
+  for (let i = 0; i < nachfolger.length; i++) {
+    let nachfolgerProzess = getProzessById(parseInt(nachfolger[i]));
+    printNachfolger(nachfolgerProzess);
+  }
 };
