@@ -5,7 +5,7 @@ console.log('Hallo, los gehts!');
 let alleProzesse = [];
 //die prozesse aus der lokalen datei alleProzesse.json lesen
 const getProzesse = async () => {
-  const res = await fetch('./alleProzesse.json');
+  const res = await fetch('./srcProzesse/filteredProzesse.json');
   const prozesse = await res.json();
   return prozesse;
 };
@@ -34,20 +34,9 @@ const createMermaidProzess = (prozess, startdatum) => {
 
 getProzesse().then((prozesse) => {
   alleProzesse = prozesse;
-  console.log(alleProzesse);
-  //es gibt zwei sichten (auftraggeber und auftragnehmer), daher müssen diese zuerst gefiltert werden (unterschiedliche prozesse)
-  let auftraggeberProzesse = alleProzesse.filter(
-    (prozess) => prozess.perspektive === 'Auftraggeber'
-  );
 
-  //nur die prozesse der zweiten ebene filtern
-  auftraggeberProzesse = auftraggeberProzesse.filter(
-    (prozess) => prozess.ebene === 2
-  );
-
-  console.log(auftraggeberProzesse);
   //den startprozess auslesen (prozess der als einziger keinen vorgänger hat)
-  let startProzess = auftraggeberProzesse.find((prozess) => prozess.pre === '');
+  let startProzess = alleProzesse.find((prozess) => prozess.pre === '');
 
   //die dauer für den startprozess hinzufügen
   addDauer(startProzess);
