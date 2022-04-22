@@ -39,12 +39,13 @@ getProzesse().then((prozesse) => {
   let auftraggeberProzesse = alleProzesse.filter(
     (prozess) => prozess.perspektive === 'Auftraggeber'
   );
-  console.log(auftraggeberProzesse);
+
   //nur die prozesse der zweiten ebene filtern
   auftraggeberProzesse = auftraggeberProzesse.filter(
     (prozess) => prozess.ebene === 2
   );
 
+  console.log(auftraggeberProzesse);
   //den startprozess auslesen (prozess der als einziger keinen vorgänger hat)
   let startProzess = auftraggeberProzesse.find((prozess) => prozess.pre === '');
 
@@ -58,12 +59,31 @@ getProzesse().then((prozesse) => {
 const printNachfolger = (prozess) => {
   //die nachfolger (id) des startprozesses auslesen
   let nachfolger = prozess?.next.split(',');
+  //manchmal sind als nachfolger nur leere strings drin, diese entfernen
+  nachfolger = nachfolger.filter((nachfolger) => nachfolger !== '');
+  //abbrechen, wenn keine nachfolger existieren
+  if (nachfolger.length === 0) {
+    return;
+  }
   //schleife über die nachfolger
   for (let i = 0; i < nachfolger.length; i++) {
     //der nachfolger wird ausgelesen
     let nachfolgerProzess = getProzessById(parseInt(nachfolger[i]));
+    //nur prozesse der zweiten ebene ausgeben
+    if (nachfolgerProzess.ebene !== 2) {
+      continue;
+    }
     //die dauer für jeden prozess hinzufügen
     addDauer(nachfolgerProzess);
     createMermaidProzess(nachfolgerProzess);
   }
+
+  /*
+  alle nachfolger des starprozesses sind an dieser Stelle ausgegeben
+  jetzt müssen die nachfolger der nachfolger ausgegeben werden
+  */
+  // for (let i = 0; i < nachfolger.length; i++) {
+  //   let nachfolgerProzess = getProzessById(parseInt(nachfolger[i]));
+  //   printNachfolger(nachfolgerProzess);
+  // }
 };
