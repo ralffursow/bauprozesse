@@ -46,6 +46,6 @@
  
  //die prozesse als json speichern
  fs.writeFileSync(
-   './srcProzesse/filteredProzesse3.json',
+   './filteredProzesseDritteEbene.json',
    JSON.stringify(neueProzesse)
  );

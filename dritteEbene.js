@@ -1,11 +1,11 @@
 //das html element, wo das diagramm angezeigt wird
-const divMermaid = document.getElementById('ebene2');
+const divMermaid = document.getElementById('ebene3');
 console.log('Hallo, los gehts!');
 //hier werden alle prozesse gespeichert
 let alleProzesse = [];
 //die prozesse aus der lokalen datei alleProzesse.json lesen
 const getProzesse = async () => {
-  const res = await fetch('./srcProzesse/filteredProzesse.json');
+  const res = await fetch('./srcProzesse/filteredProzesseDritteEbene.json');
   const prozesse = await res.json();
   return prozesse;
 };
@@ -62,7 +62,7 @@ const printNachfolger = (prozess) => {
     //der nachfolger wird ausgelesen
     let nachfolgerProzess = getProzessById(parseInt(nachfolger[i]));
     //nur prozesse der zweiten ebene ausgeben
-    if (!nachfolgerProzess || nachfolgerProzess.ebene !== 2) {
+    if (!nachfolgerProzess || nachfolgerProzess.ebene !== 3) {
       continue;
     }
     //die dauer für jeden prozess hinzufügen
