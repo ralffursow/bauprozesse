@@ -1,8 +1,16 @@
 //das html element, wo das diagramm angezeigt wird
 const divMermaid = document.getElementById('ebene2');
-console.log('Hallo, los gehts!');
+
 //hier werden alle prozesse gespeichert
 let alleProzesse = [];
+//in dieser variable wird der syntax für die clicks gespeichert
+let clickHandlerSyntax = '';
+
+//diese funktion wird ausgeführt, wenn auf den prozess geklickt wird
+var printTask = function (taskId) {
+  console.log(taskId);
+};
+
 //die prozesse aus der lokalen datei alleProzesse.json lesen
 const getProzesse = async () => {
   const res = await fetch('./srcProzesse/filteredProzesse.json');
@@ -29,7 +37,9 @@ const createMermaidProzess = (prozess, startdatum) => {
   //den syntayx für mermaid erstellen
   const mermaidSyntax = `${prozess.name}: p${prozess.id},${startStr},${tageCount}\n`;
 
-  console.log(mermaidSyntax);
+  //den syntax für die clicks generieren
+  clickHandlerSyntax += `click p${prozess.id} call printTask()\n`;
+
   //das ganze zu dem html element hinzufügen
   divMermaid.innerHTML += mermaidSyntax;
 };
@@ -45,6 +55,10 @@ getProzesse().then((prozesse) => {
   createMermaidProzess(startProzess, '2022-03-22');
 
   printNachfolger(startProzess);
+
+  //den syntax für die clicks hinzufügen
+  divMermaid.innerHTML += `\n\n${clickHandlerSyntax}`;
+  console.log(clickHandlerSyntax);
 });
 
 const printNachfolger = (prozess) => {
