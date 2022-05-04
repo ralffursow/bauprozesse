@@ -1,14 +1,39 @@
 //das html element, wo das diagramm angezeigt wird
 const divMermaid = document.getElementById('ebene2');
+const modal = document.querySelector('.modal');
+//um modal zu schließen
+const closeButton = document.querySelector('.close-button');
 
 //hier werden alle prozesse gespeichert
 let alleProzesse = [];
 //in dieser variable wird der syntax für die clicks gespeichert
 let clickHandlerSyntax = '';
 
+//modal schließen, wenn auf dem schwarzen hintergrund geklickt wird
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+
+//modal sichtbar und unsichtbar machen
+function toggleModal() {
+  modal.classList.toggle('show-modal');
+}
+
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
+
 //diese funktion wird ausgeführt, wenn auf den prozess geklickt wird
 var printTask = function (taskId) {
-  console.log(taskId);
+  //den prozess auslesen, der angeklickt wurde
+  const clickedProzess = getProzessById(+taskId.replace('p', ''));
+  //der header des modals (siehe html code)
+  const header = document.querySelector('.modal-header');
+  //den prozessnamen als überschrift hinzufügen
+  header.innerHTML = clickedProzess.name;
+
+  toggleModal();
 };
 
 //die prozesse aus der lokalen datei alleProzesse.json lesen
