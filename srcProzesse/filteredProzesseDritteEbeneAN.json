@@ -1,0 +1,1509 @@
+[
+    {
+        "id": 1002,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorselektion",
+        "name": "Vorselektion",
+        "bereich": [
+            "Vorprüfung"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1001,
+        "children": [],
+        "pre": "13",
+        "next": "1003, 1004"
+    },
+    {
+        "id": 1003,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorselektion",
+        "name": "Auftraggeberanalyse",
+        "bereich": [
+            "Vorprüfung"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1001,
+        "children": [],
+        "pre": "1002",
+        "next": "1004"
+    },
+    {
+        "id": 1004,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorselektion",
+        "name": "Auftragsbewertung",
+        "bereich": [
+            "Vorprüfung"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Berater",
+            "Projektmitarbeiter",
+            "Rechtsanwälte",
+            "Gutachter Sachverständige",
+            "Versicherer",
+            "Banken"
+        ],
+        "ebene": 3,
+        "parent": 1001,
+        "children": [
+            1005,
+            1006,
+            1007,
+            1008,
+            1009,
+            1010,
+            1011,
+            1012,
+            1013,
+            1014,
+            1015,
+            1016,
+            1017,
+            1018,
+            1019,
+            1020,
+            1021,
+            1022
+        ],
+        "pre": "1003",
+        "next": ""
+    },
+    {
+        "id": 1024,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorselektion",
+        "name": "Vertragsinhalt analysieren",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1023,
+        "children": [],
+        "pre": "1004",
+        "next": "1025"
+    },
+    {
+        "id": 1025,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorselektion",
+        "name": "Spezifische Vertragsinhalte analysieren",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Berater",
+            "Rechtsanwälte",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 1023,
+        "children": [
+            1026,
+            1027,
+            1028,
+            1029,
+            1030,
+            1031,
+            1032,
+            1033,
+            1034,
+            1035,
+            1036,
+            1037,
+            1038,
+            1039,
+            1040,
+            1041,
+            1042,
+            1043,
+            1044
+        ],
+        "pre": "1024",
+        "next": "1120"
+    },
+    {
+        "id": 1049,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorselektion",
+        "name": "Zahlungsbewertung",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "Projektleiter",
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1045,
+        "children": [
+            1046,
+            1047,
+            1048,
+            1050,
+            1062,
+            1064,
+            1066,
+            1068,
+            1070,
+            1082,
+            1084,
+            1086,
+            1088,
+            1090
+        ],
+        "pre": "1004",
+        "next": "1131"
+    },
+    {
+        "id": 1100,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Projekt(angebots)strategie",
+        "bereich": [
+            "Projektorganisation"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter"
+        ],
+        "ebene": 3,
+        "parent": 1099,
+        "children": [
+            1101,
+            1102,
+            1103,
+            1104,
+            1105
+        ],
+        "pre": "1004",
+        "next": "1106"
+    },
+    {
+        "id": 1106,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Projektkultur",
+        "bereich": [
+            "Projektorganisation"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Auftraggeber",
+            "Projektleiter",
+            "Politiker",
+            "Bürger Öffentlichkeit"
+        ],
+        "ebene": 3,
+        "parent": 1099,
+        "children": [
+            193,
+            171,
+            195,
+            196,
+            197
+        ],
+        "pre": "1100",
+        "next": "1110"
+    },
+    {
+        "id": 1110,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Projektstruktur",
+        "bereich": [
+            "Projektorganisation"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Auftraggeber",
+            "Projektleiter",
+            "Projektsteuerer",
+            "Berater"
+        ],
+        "ebene": 3,
+        "parent": 1099,
+        "children": [
+            198,
+            199,
+            200,
+            202,
+            201,
+            1112
+        ],
+        "pre": "1106",
+        "next": "1115"
+    },
+    {
+        "id": 1115,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Projektdokumentation",
+        "bereich": [
+            "Projektorganisation"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter"
+        ],
+        "ebene": 3,
+        "parent": 1099,
+        "children": [
+            1116,
+            1117,
+            1118,
+            1119
+        ],
+        "pre": "1110",
+        "next": ""
+    },
+    {
+        "id": 1120,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Angebotserstellung",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter",
+            "Rechtsanwälte",
+            "Gutachter Sachverständige",
+            "Versicherer"
+        ],
+        "ebene": 3,
+        "parent": 185,
+        "children": [
+            1121,
+            1122,
+            1124,
+            1126,
+            1127,
+            1011,
+            1079,
+            1128,
+            1129
+        ],
+        "pre": "1025",
+        "next": ""
+    },
+    {
+        "id": 1131,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Kostenschätzung",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1130,
+        "children": [],
+        "pre": "1049",
+        "next": "1132, 1133"
+    },
+    {
+        "id": 1132,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Kostenermittlung",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1130,
+        "children": [],
+        "pre": "1131",
+        "next": "1133"
+    },
+    {
+        "id": 1133,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Kostenberechnung (Kalkulation)",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1130,
+        "children": [],
+        "pre": "1132",
+        "next": "1134"
+    },
+    {
+        "id": 1134,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Kostenbewertung",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter",
+            "Banken"
+        ],
+        "ebene": 3,
+        "parent": 1130,
+        "children": [
+            1135,
+            1136,
+            1137,
+            1138,
+            1139,
+            1140,
+            1141,
+            1142,
+            1143,
+            1144,
+            1145,
+            1146,
+            1147,
+            1148,
+            1149,
+            1150,
+            1151,
+            1152,
+            1153,
+            1154,
+            1155
+        ],
+        "pre": "1133",
+        "next": ""
+    },
+    {
+        "id": 73,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Meilensteinplanung",
+        "bereich": [
+            "Termine"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Auftraggeber",
+            "Architekten Ingenieure",
+            "Projektleiter",
+            "Projektsteuerer",
+            "Projektmitarbeiter",
+            "Investoren"
+        ],
+        "ebene": 3,
+        "parent": 1190,
+        "children": [
+            74,
+            75,
+            203
+        ],
+        "pre": "",
+        "next": "76"
+    },
+    {
+        "id": 76,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Terminrahmen ",
+        "bereich": [
+            "Termine"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektsteuerer",
+            "Projektmitarbeiter",
+            "Berater",
+            "Gutachter Sachverständige",
+            "Architekten Ingenieure"
+        ],
+        "ebene": 3,
+        "parent": 1190,
+        "children": [
+            77,
+            78
+        ],
+        "pre": "73",
+        "next": ""
+    },
+    {
+        "id": 1221,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "technische Prüfung",
+        "bereich": [
+            "Leistung"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1220,
+        "children": [],
+        "pre": "",
+        "next": "1222"
+    },
+    {
+        "id": 1222,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Planung der Arbeitsvorbereitung",
+        "bereich": [
+            "Leistung"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1220,
+        "children": [],
+        "pre": "1221",
+        "next": "1223"
+    },
+    {
+        "id": 1223,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "technische Planung",
+        "bereich": [
+            "Leistung"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Projektleiter",
+            "Ausf. Firmen"
+        ],
+        "ebene": 3,
+        "parent": 1220,
+        "children": [
+            1224,
+            1225,
+            1226,
+            1227,
+            1228,
+            1229,
+            1230,
+            1231,
+            1233,
+            1235,
+            1237,
+            1239,
+            1240,
+            1241,
+            1242,
+            1243,
+            1244,
+            1245,
+            1246,
+            1247,
+            1248,
+            1249,
+            1250,
+            1251,
+            1252,
+            1253
+        ],
+        "pre": "1222",
+        "next": ""
+    },
+    {
+        "id": 1256,
+        "perspektive": "Auftragnehmer",
+        "phase": "Angebot/Kalkulation",
+        "name": "Kostenkontrolle",
+        "bereich": [
+            "Kosten",
+            "MMD"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1255,
+        "children": [],
+        "pre": "1049",
+        "next": ""
+    },
+    {
+        "id": 1320,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Verhandlungsvorbereitung",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Berater",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 112,
+        "children": [
+            1321,
+            1322,
+            1323,
+            1324,
+            1325,
+            1326,
+            1327
+        ],
+        "pre": "1120",
+        "next": "1340"
+    },
+    {
+        "id": 1330,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Lieferantenmanagement",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Ausf. Firmen",
+            "Projektleiter",
+            "Auftraggeber",
+            "Berater",
+            "Rechtsanwälte"
+        ],
+        "ebene": 3,
+        "parent": 112,
+        "children": [
+            1331,
+            1332,
+            1333,
+            1334,
+            1335
+        ],
+        "pre": "1340",
+        "next": "1340"
+    },
+    {
+        "id": 1340,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Verhandlungsstrategie entwickeln",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 112,
+        "children": [
+            1341,
+            1342,
+            1343,
+            1344,
+            1345
+        ],
+        "pre": "1320",
+        "next": ""
+    },
+    {
+        "id": 237,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Verhandlungsgespräche führen",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Auftraggeber",
+            "Rechtsanwälte",
+            "Berater",
+            "Ausf. Firmen"
+        ],
+        "ebene": 3,
+        "parent": 112,
+        "children": [
+            1350,
+            1351,
+            1352,
+            1353,
+            162
+        ],
+        "pre": "1330, 1340",
+        "next": ""
+    },
+    {
+        "id": 1361,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Auftragskalkulation",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 1360,
+        "children": [],
+        "pre": "1134",
+        "next": ""
+    },
+    {
+        "id": 1362,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Arbeitskalkulation",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 1360,
+        "children": [
+            1365,
+            1366,
+            1370,
+            1371,
+            1372,
+            1373,
+            1375
+        ],
+        "pre": "1361",
+        "next": ""
+    },
+    {
+        "id": 223,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Projektbuchhaltung",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter",
+            "Architekten Ingenieure",
+            "Auftraggeber"
+        ],
+        "ebene": 3,
+        "parent": 1360,
+        "children": [
+            1381,
+            226
+        ],
+        "pre": "1362",
+        "next": ""
+    },
+    {
+        "id": 1092,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Generalterminplan",
+        "bereich": [
+            "Termine"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Projektleiter",
+            "Auftraggeber"
+        ],
+        "ebene": 3,
+        "parent": 1390,
+        "children": [
+            1096,
+            1093,
+            1094,
+            1095,
+            1096
+        ],
+        "pre": "76",
+        "next": "1400"
+    },
+    {
+        "id": 1400,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Bauausführungsterminplan",
+        "bereich": [
+            "Termine"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Ausf. Firmen"
+        ],
+        "ebene": 3,
+        "parent": 1390,
+        "children": [
+            1401,
+            1402,
+            1403
+        ],
+        "pre": "1092",
+        "next": ""
+    },
+    {
+        "id": 1158,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Meilensteinplanung",
+        "bereich": [
+            "Termine"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 1390,
+        "children": [
+            1415,
+            1416
+        ],
+        "pre": "1092",
+        "next": ""
+    },
+    {
+        "id": 1420,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Termin- & Ressourcenplanung",
+        "bereich": [
+            "Termine"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 1390,
+        "children": [
+            1421,
+            1422,
+            1423,
+            1424,
+            1425
+        ],
+        "pre": "1400",
+        "next": ""
+    },
+    {
+        "id": 1431,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Baustellenplanung",
+        "bereich": [
+            "Leistung"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 1430,
+        "children": [
+            1432,
+            1433,
+            1434,
+            1435
+        ],
+        "pre": "1222",
+        "next": ""
+    },
+    {
+        "id": 1440,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Bauablaufplanung",
+        "bereich": [
+            "Leistung"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 1430,
+        "children": [
+            1441,
+            1442,
+            1443,
+            1444,
+            1445
+        ],
+        "pre": "1431",
+        "next": ""
+    },
+    {
+        "id": 44,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Kostenkontrolle",
+        "bereich": [
+            "Kosten",
+            "MMD"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter",
+            "Projektsteuerer",
+            "Architekten Ingenieure",
+            "Berater",
+            "Gutachter Sachverständige",
+            "Banken"
+        ],
+        "ebene": 3,
+        "parent": 1450,
+        "children": [
+            1451,
+            264,
+            265,
+            1452,
+            266,
+            1453,
+            1454,
+            1455
+        ],
+        "pre": "1259",
+        "next": ""
+    },
+    {
+        "id": 83,
+        "perspektive": "Auftragnehmer",
+        "phase": "Vorbereitung",
+        "name": "Terminkontrolle",
+        "bereich": [
+            "Termine",
+            "MMD"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Projektsteuerer",
+            "Architekten Ingenieure",
+            "Ausf. Firmen",
+            "Projektleiter",
+            "Auftraggeber",
+            "Nutzer",
+            "Berater",
+            "Gutachter Sachverständige"
+        ],
+        "ebene": 3,
+        "parent": 1450,
+        "children": [
+            82,
+            274,
+            1460,
+            1461,
+            1462,
+            1463,
+            1464,
+            1465,
+            1466,
+            279
+        ],
+        "pre": "1092, 1158",
+        "next": ""
+    },
+    {
+        "id": 17,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Vertragsdurchführung",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Auftraggeber",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 21,
+        "children": [
+            1530,
+            1531,
+            1532,
+            1533,
+            1534,
+            1540
+        ],
+        "pre": "237",
+        "next": ""
+    },
+    {
+        "id": 1550,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Nachforderungsmanagement",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter",
+            "Auftraggeber",
+            "Ausf. Firmen"
+        ],
+        "ebene": 3,
+        "parent": 21,
+        "children": [
+            1551,
+            1552,
+            1553,
+            1554
+        ],
+        "pre": "17",
+        "next": ""
+    },
+    {
+        "id": 1560,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Mängelmanagement vor der Abnahme",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Ausf. Firmen"
+        ],
+        "ebene": 3,
+        "parent": 21,
+        "children": [
+            1561,
+            1562,
+            1563
+        ],
+        "pre": "1550",
+        "next": ""
+    },
+    {
+        "id": 65,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Kostenverfolgung",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Projektsteuerer",
+            "Architekten Ingenieure",
+            "Projektleiter"
+        ],
+        "ebene": 3,
+        "parent": 64,
+        "children": [
+            66,
+            1571,
+            1572,
+            1573,
+            292,
+            293
+        ],
+        "pre": "223",
+        "next": "1580"
+    },
+    {
+        "id": 1580,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Arbeitskalkulation",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 64,
+        "children": [
+            1581,
+            1582,
+            1583,
+            1584
+        ],
+        "pre": "65",
+        "next": ""
+    },
+    {
+        "id": 294,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Nachtragsmanagement",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter",
+            "Berater",
+            "Projektsteuerer",
+            "Architekten Ingenieure"
+        ],
+        "ebene": 3,
+        "parent": 64,
+        "children": [
+            1590,
+            1591,
+            1592,
+            1593,
+            1594,
+            67
+        ],
+        "pre": "1580",
+        "next": ""
+    },
+    {
+        "id": 296,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Projektbuchhaltung",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Auftraggeber",
+            "Projektleiter",
+            "Versicherer",
+            "Investoren",
+            "Banken"
+        ],
+        "ebene": 3,
+        "parent": 64,
+        "children": [
+            297
+        ],
+        "pre": "294",
+        "next": ""
+    },
+    {
+        "id": 298,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Rechnungen prüfen und freigeben",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 64,
+        "children": [],
+        "pre": "297",
+        "next": ""
+    },
+    {
+        "id": 1612,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Abnahmeterminplan",
+        "bereich": [
+            "Termine"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter",
+            "Architekten Ingenieure",
+            "Auftraggeber",
+            "Ausf. Firmen",
+            "Banken",
+            "Nutzer"
+        ],
+        "ebene": 3,
+        "parent": 1610,
+        "children": [
+            1613,
+            1614,
+            1615,
+            1616,
+            1617,
+            1618,
+            1620,
+            1621,
+            1622,
+            1623,
+            1624
+        ],
+        "pre": "1611",
+        "next": ""
+    },
+    {
+        "id": 1631,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Bauproduktionsmanagement",
+        "bereich": [
+            "Leistung"
+        ],
+        "beteiligte": [
+            "n.a."
+        ],
+        "ebene": 3,
+        "parent": 147,
+        "children": [],
+        "pre": "1440",
+        "next": ""
+    },
+    {
+        "id": 1632,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Ausführungsplanung",
+        "bereich": [
+            "Leistung"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Ausf. Firmen"
+        ],
+        "ebene": 3,
+        "parent": 147,
+        "children": [
+            1632,
+            1633,
+            1634,
+            1635,
+            1636,
+            1637,
+            1640,
+            1641,
+            1642,
+            1643,
+            1644,
+            1645
+        ],
+        "pre": "1434",
+        "next": "1633, 1636"
+    },
+    {
+        "id": 148,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Überwachung der Ausführung",
+        "bereich": [
+            "Leistung"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Projektsteuerer",
+            "Architekten Ingenieure",
+            "Projektleiter",
+            "Berater",
+            "Gutachter Sachverständige",
+            "Ausf. Firmen"
+        ],
+        "ebene": 3,
+        "parent": 147,
+        "children": [
+            150,
+            153,
+            149,
+            307,
+            1660,
+            1661,
+            154
+        ],
+        "pre": "1632",
+        "next": ""
+    },
+    {
+        "id": 1720,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Leistungsmeldung",
+        "bereich": [
+            "Leistungsmeldung",
+            "MMD"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 46,
+        "children": [
+            1721,
+            1722,
+            1723,
+            1724,
+            1725,
+            1726,
+            1727,
+            1728
+        ],
+        "pre": "123",
+        "next": ""
+    },
+    {
+        "id": 337,
+        "perspektive": "Auftragnehmer",
+        "phase": "Durchführung",
+        "name": "Projektsteuerung",
+        "bereich": [
+            "Projektorganisation",
+            "MMD"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Projektsteuerer",
+            "Architekten Ingenieure",
+            "Berater",
+            "Gutachter Sachverständige",
+            "Rechtsanwälte",
+            "Banken",
+            "Auftraggeber",
+            "Projektleiter"
+        ],
+        "ebene": 3,
+        "parent": 46,
+        "children": [
+            338,
+            339,
+            340
+        ],
+        "pre": "47, 126, 86, 1720",
+        "next": ""
+    },
+    {
+        "id": 1760,
+        "perspektive": "Auftragnehmer",
+        "phase": "Nachbereitung",
+        "name": "Mängelmanagement nach der Abnahme",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Projektleiter",
+            "Ausf. Firmen",
+            "Auftraggeber"
+        ],
+        "ebene": 3,
+        "parent": 21,
+        "children": [
+            1761,
+            1762,
+            1763,
+            1764,
+            1765
+        ],
+        "pre": "17",
+        "next": ""
+    },
+    {
+        "id": 22,
+        "perspektive": "Auftragnehmer",
+        "phase": "Nachbereitung",
+        "name": "Vertragsende",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Architekten Ingenieure",
+            "Gutachter Sachverständige",
+            "Ausf. Firmen",
+            "Auftraggeber",
+            "Rechtsanwälte"
+        ],
+        "ebene": 3,
+        "parent": 21,
+        "children": [
+            23,
+            24
+        ],
+        "pre": "1760",
+        "next": ""
+    },
+    {
+        "id": 1770,
+        "perspektive": "Auftragnehmer",
+        "phase": "Nachbereitung",
+        "name": "Vertragsaufarbeitung",
+        "bereich": [
+            "Vertrag"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter"
+        ],
+        "ebene": 3,
+        "parent": 21,
+        "children": [
+            1771,
+            1772,
+            1773,
+            1774,
+            1775,
+            1776
+        ],
+        "pre": "22",
+        "next": ""
+    },
+    {
+        "id": 69,
+        "perspektive": "Auftragnehmer",
+        "phase": "Nachbereitung",
+        "name": "Kostenfeststellung",
+        "bereich": [
+            "Kosten"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Projektsteuerer",
+            "Architekten Ingenieure"
+        ],
+        "ebene": 3,
+        "parent": 68,
+        "children": [
+            356,
+            70
+        ],
+        "pre": "65",
+        "next": ""
+    },
+    {
+        "id": 1820,
+        "perspektive": "Auftragnehmer",
+        "phase": "Nachbereitung",
+        "name": "Terminfeststellung",
+        "bereich": [
+            "Termine"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter",
+            "Berater"
+        ],
+        "ebene": 3,
+        "parent": 68,
+        "children": [
+            1821,
+            1822,
+            1823,
+            1824,
+            1825,
+            1826
+        ],
+        "pre": "1610",
+        "next": ""
+    },
+    {
+        "id": 1840,
+        "perspektive": "Auftragnehmer",
+        "phase": "Nachbereitung",
+        "name": "Mängelbeseitigung u. Gewährleistung",
+        "bereich": [
+            "Leistung"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektmitarbeiter",
+            "Architekten Ingenieure",
+            "Gutachter Sachverständige",
+            "Nutzer",
+            "Projektleiter",
+            "Ausf. Firmen",
+            "Projektsteuerer",
+            "Rechtsanwälte"
+        ],
+        "ebene": 3,
+        "parent": 155,
+        "children": [
+            157,
+            1841,
+            373,
+            161
+        ],
+        "pre": "306",
+        "next": ""
+    },
+    {
+        "id": 1850,
+        "perspektive": "Auftragnehmer",
+        "phase": "Nachbereitung",
+        "name": "Kostenfeststellung",
+        "bereich": [
+            "Kosten",
+            "MMD"
+        ],
+        "beteiligte": [
+            "n.a.",
+            "Projektleiter",
+            "Projektmitarbeiter",
+            "Auftraggeber",
+            "Ausf. Firmen",
+            "Architekten Ingenieure"
+        ],
+        "ebene": 3,
+        "parent": 49,
+        "children": [
+            1851,
+            1852,
+            1853,
+            1854,
+            1855,
+            1856,
+            1857,
+            1858
+        ],
+        "pre": "47",
+        "next": ""
+    }
+]

@@ -46,7 +46,7 @@ var printTask = function (taskId) {
 
 //die prozesse aus der lokalen datei alleProzesse.json lesen
 const getProzesse = async () => {
-  const res = await fetch('./srcProzesse/filteredProzesse.json');
+  const res = await fetch('./srcProzesse/filteredProzesseAG.json');
   const prozesse = await res.json();
   return prozesse;
 };

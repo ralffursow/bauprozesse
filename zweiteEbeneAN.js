@@ -1,11 +1,52 @@
 //das html element, wo das diagramm angezeigt wird
-const divMermaid = document.getElementById('ebene3');
-console.log('Hallo, los gehts!');
+const divMermaid = document.getElementById('ebene2');
+const modal = document.querySelector('.modal');
+//um modal zu schließen
+const closeButton = document.querySelector('.close-button');
+
 //hier werden alle prozesse gespeichert
 let alleProzesse = [];
+//in dieser variable wird der syntax für die clicks gespeichert
+let clickHandlerSyntax = '';
+
+//modal schließen, wenn auf dem schwarzen hintergrund geklickt wird
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
+
+//modal sichtbar und unsichtbar machen
+function toggleModal() {
+  modal.classList.toggle('show-modal');
+}
+
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
+
+//diese funktion wird ausgeführt, wenn auf den prozess geklickt wird
+var printTask = function (taskId) {
+  //den prozess auslesen, der angeklickt wurde
+  const clickedProzess = getProzessById(+taskId.replace('p', ''));
+  //der header des modals (siehe html code)
+  const name = document.querySelector('.name');
+  const perspektive = document.querySelector('.perspektive');
+  const phase = document.querySelector('.phase');
+  const bereich = document.querySelector('.bereich')
+  const beteiligte = document.querySelector('.beteiligte')
+  //den prozessnamen als überschrift hinzufügen
+  name.innerHTML = clickedProzess.name;
+  perspektive.innerHTML = clickedProzess.perspektive;
+  phase.innerHTML = clickedProzess.phase;
+  bereich.innerHTML = clickedProzess.bereich;
+  beteiligte.innerHTML = clickedProzess.beteiligte;
+
+  toggleModal();
+};
+
 //die prozesse aus der lokalen datei alleProzesse.json lesen
 const getProzesse = async () => {
-  const res = await fetch('./srcProzesse/filteredProzesseDritteEbene.json');
+  const res = await fetch('./srcProzesse/filteredProzesseAN.json');
   const prozesse = await res.json();
   return prozesse;
 };
@@ -29,7 +70,9 @@ const createMermaidProzess = (prozess, startdatum) => {
   //den syntayx für mermaid erstellen
   const mermaidSyntax = `${prozess.name}: p${prozess.id},${startStr},${tageCount}\n`;
 
-  console.log(mermaidSyntax);
+  //den syntax für die clicks generieren
+  clickHandlerSyntax += `click p${prozess.id} call printTask()\n`;
+
   //das ganze zu dem html element hinzufügen
   divMermaid.innerHTML += mermaidSyntax;
 };
@@ -45,6 +88,10 @@ getProzesse().then((prozesse) => {
   createMermaidProzess(startProzess, '2022-03-22');
 
   printNachfolger(startProzess);
+
+  //den syntax für die clicks hinzufügen
+  divMermaid.innerHTML += `\n\n${clickHandlerSyntax}`;
+  console.log(clickHandlerSyntax);
 });
 
 const printNachfolger = (prozess) => {
@@ -62,7 +109,7 @@ const printNachfolger = (prozess) => {
     //der nachfolger wird ausgelesen
     let nachfolgerProzess = getProzessById(parseInt(nachfolger[i]));
     //nur prozesse der zweiten ebene ausgeben
-    if (!nachfolgerProzess || nachfolgerProzess.ebene !== 3) {
+    if (!nachfolgerProzess || nachfolgerProzess.ebene !== 2) {
       continue;
     }
     //die dauer für jeden prozess hinzufügen

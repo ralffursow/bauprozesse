@@ -13,12 +13,12 @@ const getProzessById = (id) => {
 
 //es gibt zwei sichten (auftraggeber und auftragnehmer), daher müssen diese zuerst gefiltert werden (unterschiedliche prozesse)
 let auftraggeberProzesse = alleProzesse.filter(
-  (prozess) => prozess.perspektive === 'Auftraggeber'
+  (prozess) => prozess.perspektive === 'Auftragnehmer'
 );
 
 //nur die prozesse der zweiten ebene filtern
 auftraggeberProzesse = auftraggeberProzesse.filter(
-  (prozess) => prozess.ebene === 2
+  (prozess) => prozess.ebene === 3
 );
 
 //alle prozesse herausfiltern, die keinen vorgeanger und keinen nachfolger haben
@@ -46,6 +46,6 @@ for (let i = 0; i < auftraggeberProzesse.length; i++) {
 
 //die prozesse als json speichern
 fs.writeFileSync(
-  './srcProzesse/filteredProzesseAG.json',
+  './srcProzesse/filteredProzesseDritteEbeneAN.json',
   JSON.stringify(neueProzesse)
 );

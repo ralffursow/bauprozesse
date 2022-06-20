@@ -18,7 +18,7 @@ let auftraggeberProzesse = alleProzesse.filter(
 
 //nur die prozesse der zweiten ebene filtern
 auftraggeberProzesse = auftraggeberProzesse.filter(
-  (prozess) => prozess.ebene === 2
+  (prozess) => prozess.ebene === 3
 );
 
 //alle prozesse herausfiltern, die keinen vorgeanger und keinen nachfolger haben
@@ -46,6 +46,6 @@ for (let i = 0; i < auftraggeberProzesse.length; i++) {
 
 //die prozesse als json speichern
 fs.writeFileSync(
-  './srcProzesse/filteredProzesseAG.json',
+  './srcProzesse/filteredProzesseDritteEbeneAG.json',
   JSON.stringify(neueProzesse)
 );
