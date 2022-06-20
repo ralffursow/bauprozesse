@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="icon" type="image/png" href=".\img\favicon.png">
+    <title>Ebene 2 - Bauprozesse</title>
+</head>
+<header>
+
+    <!-- Navigation -->
+    <nav class="topnav" id="myTopnav">
+        <!-- Logo 1 -->
+        <label id="logo">
+            <a href="https://www.jade-hs.de" target="_blank">
+                <img src="img/jade_logo.png" alt="Jade Logo">
+            </a>
+        </label>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a class="active" href="zweiteEbene.html">Ebene 2</a></li>
+            <li><a href="dritteEbene.html">Ebene 3</a></li>
+            <li><a href="vierteEbene.html">Ebene 4</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<body>
+    <!-- hier werden die information zu dem modal angzeigt -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1 class="name"></h1>
+            <h2>Perspektive:</h2>
+            <p class="perspektive"></p>
+            <h2>Phase:</h2>
+            <p class="phase"></p>
+            <h2>Bereich:</h2>
+            <p class="bereich"></p>
+            <h2>Beteiligte:</h2>
+            <p class="beteiligte">
+                </h2>
+        </div>
+    </div>
+    <section>
+        <br>
+        <div class="mermaid" id="ebene2">
+            gantt
+            title Bauprozesse Ebene 2
+            dateFormat YYYY-MM-DD
+            todayMarker off
+            click p25 href "https://mermaidjs.github.io/"
+
+            % Prozesse
+        </div>
+        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.ganttConfig = {
+                titleTopMargin: 25,
+                barHeight: 40,
+                barGap: 4,
+                topPadding: 75,
+                sidePadding: 75
+            }
+            var config = {
+                startOnLoad: true,
+                securityLevel: 'loose',
+            };
+            mermaid.initialize(config);
+        </script>
+</body>
+
+</html>

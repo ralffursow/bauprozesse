@@ -21,13 +21,14 @@ img {
 
 nav ul {
     float: right;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 nav ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    list-style: none;
 }
 
 nav ul li a {
@@ -37,10 +38,27 @@ nav ul li a {
     border-radius: 3px;
 }
 
+nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+nav ul ul li {
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
 a.active,
 a:hover {
     background-color: rgb(125, 133, 238);
     transition: .5s;
+}
+
+nav ul li:hover>ul {
+    display: block;
 }
 
 /*Startseite*/

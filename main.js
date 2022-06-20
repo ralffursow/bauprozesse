@@ -29,9 +29,17 @@ var printTask = function (taskId) {
   //den prozess auslesen, der angeklickt wurde
   const clickedProzess = getProzessById(+taskId.replace('p', ''));
   //der header des modals (siehe html code)
-  const header = document.querySelector('.modal-header');
+  const name = document.querySelector('.name');
+  const perspektive = document.querySelector('.perspektive');
+  const phase = document.querySelector('.phase');
+  const bereich = document.querySelector('.bereich')
+  const beteiligte = document.querySelector('.beteiligte')
   //den prozessnamen als überschrift hinzufügen
-  header.innerHTML = clickedProzess.name;
+  name.innerHTML = clickedProzess.name;
+  perspektive.innerHTML = clickedProzess.perspektive;
+  phase.innerHTML = clickedProzess.phase;
+  bereich.innerHTML = clickedProzess.bereich;
+  beteiligte.innerHTML = clickedProzess.beteiligte;
 
   toggleModal();
 };

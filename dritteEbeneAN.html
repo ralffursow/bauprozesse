@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href=".\img\favicon.png">
+    <title>Ebene 3 - Bauprozesse</title>
+</head>
+<header>
+
+    <!-- Navigation -->
+    <nav class="topnav" id="myTopnav">
+        <!-- Logo 1 -->
+        <label id="logo">
+            <a href="https://www.jade-hs.de" target="_blank">
+                <img src="img/jade_logo.png" alt="Jade Logo">
+            </a>
+        </label>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="zweiteEbene.html">Ebene 2</a></li>
+            <li><a class="active" href="dritteEbene.html">Ebene 3</a></li>
+            <li><a href="vierteEbene.html">Ebene 4</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<body>
+    <section>
+        <br>
+        <div class="mermaid" id="ebene3">
+            gantt
+            title Baurpozesse Ebene 3
+            dateFormat YYYY-MM-DD
+            todayMarker off
+
+            % Prozesse
+        </div>
+        <script src="dritteEbene.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.ganttConfig = {
+                titleTopMargin: 25,
+                barHeight: 40,
+                barGap: 4,
+                topPadding: 75,
+                sidePadding: 75
+            }
+            mermaid.initialize({
+                startOnLoad: true,
+            });
+        </script>
+</body>
+
+</html>
