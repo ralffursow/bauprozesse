@@ -32,8 +32,8 @@ var printTask = function (taskId) {
   const name = document.querySelector('.name');
   const perspektive = document.querySelector('.perspektive');
   const phase = document.querySelector('.phase');
-  const bereich = document.querySelector('.bereich')
-  const beteiligte = document.querySelector('.beteiligte')
+  const bereich = document.querySelector('.bereich');
+  const beteiligte = document.querySelector('.beteiligte');
   //den prozessnamen als überschrift hinzufügen
   name.innerHTML = clickedProzess.name;
   perspektive.innerHTML = clickedProzess.perspektive;
@@ -74,6 +74,8 @@ const createMermaidProzess = (prozess, startdatum) => {
 
   //das ganze zu dem html element hinzufügen
   divMermaid.innerHTML += mermaidSyntax;
+
+  console.log(mermaidSyntax);
 };
 
 getProzesse().then((prozesse) => {
@@ -108,7 +110,7 @@ const printNachfolger = (prozess) => {
     //der nachfolger wird ausgelesen
     let nachfolgerProzess = getProzessById(parseInt(nachfolger[i]));
     //nur prozesse der zweiten ebene ausgeben
-    if (!nachfolgerProzess || nachfolgerProzess.ebene !== 2) {
+    if (!nachfolgerProzess || nachfolgerProzess.ebene !== 3) {
       continue;
     }
     //die dauer für jeden prozess hinzufügen

@@ -32,8 +32,8 @@ var printTask = function (taskId) {
   const name = document.querySelector('.name');
   const perspektive = document.querySelector('.perspektive');
   const phase = document.querySelector('.phase');
-  const bereich = document.querySelector('.bereich')
-  const beteiligte = document.querySelector('.beteiligte')
+  const bereich = document.querySelector('.bereich');
+  const beteiligte = document.querySelector('.beteiligte');
   //den prozessnamen als überschrift hinzufügen
   name.innerHTML = clickedProzess.name;
   perspektive.innerHTML = clickedProzess.perspektive;
@@ -85,7 +85,7 @@ getProzesse().then((prozesse) => {
 
   //die dauer für den startprozess hinzufügen
   addDauer(startProzess);
-  createMermaidProzess(startProzess, '2022-03-22');
+  createMermaidProzess(startProzess, '2022-06-21');
 
   printNachfolger(startProzess);
 
