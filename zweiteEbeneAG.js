@@ -1,5 +1,5 @@
 //das html element, wo das diagramm angezeigt wird
-const divMermaid = document.getElementById('ebene2');
+const divMermaid = document.getElementById('ebene2AG');
 const modal = document.querySelector('.modal');
 //um modal zu schließen
 const closeButton = document.querySelector('.close-button');
@@ -40,7 +40,6 @@ var printTask = function (taskId) {
   phase.innerHTML = clickedProzess.phase;
   bereich.innerHTML = clickedProzess.bereich;
   beteiligte.innerHTML = clickedProzess.beteiligte;
-
   toggleModal();
 };
 

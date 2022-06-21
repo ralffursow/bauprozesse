@@ -6,52 +6,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="icon" type="image/png" href=".\img\favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     <title>Ebene 4 - Bauprozesse</title>
 </head>
-<header>
 
-    <!-- Navigation -->
-    <nav class="topnav" id="myTopnav">
-        <!-- Logo 1 -->
-        <label id="logo">
-            <a href="https://www.jade-hs.de" target="_blank">
-                <img src="img/jade_logo.png" alt="Jade Logo">
-            </a>
-        </label>
-        <!-- Logo 2 -->
-        <label id="logo">
-            <a href="https://www.ivibau.de" target="_blank">
-                <img src="img/inbi_logo.png" alt="Inbi Logo">
-            </a>
-        </label>
-        <ul>
-            <li><a href="index.html">Startseite</a></li>
-            <li><a href="#">Ebene 2</a>
-                <ul>
-                    <li><a href="zweiteEbeneAG.html">Auftraggeber</a></li>
-                    <li><a href="zweiteEbeneAN.html">Auftragnehmer</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Ebene 3</a>
-                <ul>
-                    <li><a href="dritteEbeneAG.html">Auftraggeber</a></li>
-                    <li><a href="dritteEbeneAN.html">Auftragnehmer</a></li>
-                </ul>
-            </li>
-            <li><a class="active" href="vierteEbene.html">Ebene 4</a>
-                <ul>
-                    <li><a href="vierteEbeneAG.html">Auftraggeber</a></li>
-                    <li><a href="vierteEbeneAN.html">Auftragnehmer</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-</header>
 
 <body>
+    <section class="sub-header">
+        <nav>
+            <a href="https://www.ivibau.de"><img src="img/inbi_logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="#">Ebene2</a>
+                        <ul>
+                            <li><a href="zweiteEbeneAG.html">AG</a></li>
+                            <li><a href="zweiteEbeneAN.html">AN</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ebene3</a>
+                        <ul>
+                            <li><a href="dritteEbeneAG.html">AG</a></li>
+                            <li><a href="dritteEbeneAN.html">AN</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Ebene4</a>
+                        <ul>
+                            <li><a href="vierteEbeneAG.html">AG</a></li>
+                            <li><a href="vierteEbeneAN.html">AN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Bauprozesse Ebene 4 Auftraggeber</h1>
+    </section>
+    <!-- hier werden die information zu dem modal angzeigt -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h1 class="name"></h1>
+            <h2>Perspektive:</h2>
+            <p class="perspektive"></p>
+            <h2>Phase:</h2>
+            <p class="phase"></p>
+            <h2>Bereich:</h2>
+            <p class="bereich"></p>
+            <h2>Beteiligte:</h2>
+            <p class="beteiligte"></p>
+        </div>
+    </div>
     <section>
+        <br>
+        <div class="mermaid" id="ebene4AG">
+            gantt
+            dateFormat YYYY-MM-DD
+            todayMarker off
+            click p25 href "https://mermaidjs.github.io/"
+
+            % Prozesse
+        </div>
+        <script src="vierteEbeneAG.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+        <script>
+            mermaid.ganttConfig = {
+                titleTopMargin: 25,
+                barHeight: 40,
+                barGap: 4,
+                topPadding: 75,
+                sidePadding: 75
+            }
+            var config = {
+                startOnLoad: true,
+                securityLevel: 'loose',
+            };
+            mermaid.initialize(config);
+        </script>
 </body>
 
 </html>

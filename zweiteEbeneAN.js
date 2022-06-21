@@ -1,5 +1,5 @@
 //das html element, wo das diagramm angezeigt wird
-const divMermaid = document.getElementById('ebene2');
+const divMermaid = document.getElementById('ebene2AN');
 const modal = document.querySelector('.modal');
 //um modal zu schließen
 const closeButton = document.querySelector('.close-button');
