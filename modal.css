@@ -18,7 +18,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 1rem 1.5rem;
-    width: 46rem;
+    width: 38rem;
     border-radius: 0.5rem;
 }
 
@@ -75,3 +75,15 @@ p {
     font-size: 20px;
 }
 */
+.modal h1{
+    font-size: 32px;
+    text-align: center;
+}
+.modal p{
+    font-size: 14px;
+    margin-left: 20px;
+}
+.modal h2{
+    font-size: 20px;
+    margin-left: 10px;
+}
