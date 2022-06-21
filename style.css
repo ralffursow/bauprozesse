@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -6,40 +6,46 @@
 
 /* -----Header und Navigation----- */
 
-.header{
+.header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(img/baustelle.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/baustelle.png);
     background-position: center;
     background-size: cover;
     position: relative;
 }
-nav{
+
+nav {
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
-nav img{
+
+nav img {
     width: 100px;
-    align-items:center;
+    align-items: center;
 }
-.nav.links{
+
+.nav.links {
     flex: 1;
     text-align: right;
 }
-.nav-links ul li{
+
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-.nav-links ul li a{
+
+.nav-links ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 20px;
 }
-.nav-links ul li::after{
+
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -48,46 +54,52 @@ nav img{
     margin: auto;
     transition: 0.5s;
 }
-.nav-links ul li:hover::after{
+
+.nav-links ul li:hover::after {
     width: 100%;
 }
+
 nav ul ul li {
-    width: 20px;
+    width: 30px;
     float: none;
     display: list-item;
     position: absolute;
     margin: 0px;
     text-align: left;
 }
-nav ul li ul{
-    display:none;
+
+nav ul li ul {
+    display: none;
 }
 
-nav ul li:hover ul{
-    display:block;
+nav ul li:hover ul {
+    display: block;
     position: absolute;
 }
 
 /* -----Textbox----- */
 
-.text-box{
+.text-box {
     width: 90%;
     color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
-.text-box h1{
+
+.text-box h1 {
     font-size: 62px;
 }
-.text-box p{
+
+.text-box p {
     margin: 10px 0 40px;
     font-size: 14px;
     color: #fff;
 }
-.hero-btn{
+
+.hero-btn {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -98,7 +110,8 @@ nav ul li:hover ul{
     position: relative;
     cursor: pointer;
 }
-.hero-btn:hover{
+
+.hero-btn:hover {
     border: 1px solid #f44336;
     background: #f44336;
     transition: 1s;
@@ -106,34 +119,39 @@ nav ul li:hover ul{
 
 /* -----Bauphasen----- */
 
-.Bauphasen{
+.Bauphasen {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
 }
-h1{
+
+h1 {
     font-size: 36px;
     font-weight: 600;
 }
-p{
+
+p {
     color: #777;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
 }
-.row{
+
+.row {
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
-.row2{
+
+.row2 {
     margin-top: 2%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
-.Bauphase-col{
+
+.Bauphase-col {
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -142,7 +160,8 @@ p{
     box-sizing: border-box;
     transition: 0.5s;
 }
-.Bauphase-col2{
+
+.Bauphase-col2 {
     flex-basis: 31%;
     background: #fff3f3;
     border-radius: 10px;
@@ -151,33 +170,38 @@ p{
     box-sizing: border-box;
     transition: 0.5s;
 }
-.Bauphase-col:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+.Bauphase-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
-.Bauphase-col2:hover{
-    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+.Bauphase-col2:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* -----Ebenen----- */
 
-.ebenen{
+.ebenen {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
-.ebenen-col{
+
+.ebenen-col {
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-.ebenen-col img{
+
+.ebenen-col img {
     width: 100%;
     display: block;
 }
-.layer{
+
+.layer {
     background: transparent;
     height: 100%;
     width: 100%;
@@ -186,10 +210,12 @@ p{
     left: 0;
     transition: 0.5s;
 }
-.layer:hover{
+
+.layer:hover {
     background: rgba(245, 86, 86, 0.7);
 }
-.layer h3{
+
+.layer h3 {
     width: 100%;
     font-weight: 500;
     color: #fff;
@@ -201,19 +227,22 @@ p{
     opacity: 0;
     transition: 0.5s;
 }
-.layer:hover h3{
+
+.layer:hover h3 {
     bottom: 49%;
     opacity: 1;
 
-/* -----Footer----- */
+    /* -----Footer----- */
 
 }
-.footer{
+
+.footer {
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
-.footer h4{
+
+.footer h4 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
@@ -221,16 +250,16 @@ p{
 
 /* -----Unterseiten----- */
 
-.sub-header{
+.sub-header {
     height: 40vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/bscropped.png);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/bscropped.png);
     background-position: center;
     background-size: cover;
     text-align: center;
     color: #fff;
 }
-.sub-header h1{
+
+.sub-header h1 {
     margin-top: 40px;
 }
-
