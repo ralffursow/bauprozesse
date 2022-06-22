@@ -11,16 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     <title>Bauprozesse</title>
 </head>
 
 <body>
     <section class="header">
         <nav>
-            <a href="https://www.ivibau.de"><img src="img/inbi_logo.png"></a>
-            <div class="nav-links">
+            <a href=" https://www.ivibau.de"><img src="img/inbi_logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href=" index.html">Startseite</a></li>
                     <li><a href="#">Ebene2</a>
                         <ul>
                             <li><a href="zweiteEbeneAG.html">AG</a></li>
@@ -41,6 +44,7 @@
                     </li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
     </section>
@@ -127,6 +131,8 @@
     <section class="footer">
         <p>Carlo Arienti | Ralf Fursow</p>
     </section>
+
+    <script src="index.js"></script>
 
 </body>
 
